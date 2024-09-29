@@ -1,0 +1,273 @@
+The rise of containers opens a new frontier for developers, simplifying the movement of work from machine to machine. As they become more popular, though, a new battle emerges. The race is on for the control of container orchestration and it involves the industry’s fastest, strongest players.
+
+Containers are one of the most important evolutions in the open source movement. In this episode, featured guests—includingKelsey Hightower,Laura Frank, andClayton Coleman—explain how this new technology is the building block of the future and why orchestration is so crucial.
+
+Saron Yitbarek
+
+So. Have you ever been to a horse race, seen the stallions lined up and pawing the dirt? That's what you need to picture. A race is about to begin, and the outcome is going to turn one of these contenders into a champion.
+
+00:30-Saron Yitbarek
+
+Only, they're not horses. They're powerhouses of the tech world. What's so important about their race? What prize could be so valuable that they're all lining up and chomping at the bit? This is an all   out race to control the orchestration of container technology. And, oh yeah, this isn't like other races. Win this race and you're not just today's champion, you're securing your place as a champion of the future.
+
+01:00-Saron Yitbarek
+
+I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat. Episode Five: The Containers Derby. Last time we looked at the rise of DevOps and how a new set of tools is tied to new attitudes about the role of developers. In this episode, we track the rise of containers and how they expand the role of developers even further by supporting new kinds of unbounded work. And we'll see how the standardization of containers laid the track for that race toward container orchestration.
+
+01:30-Saron Yitbarek
+
+This is a serious race, and a global one, attracting some of the industry's fastest, strongest players. They're all ready to bolt for the finish line. Ready? And they're off.
+
+Now, as those horses leave the gate, maybe we should clarify why this race really matters. Who cares about containers anyway? Well, I do for one, but I didn't know that at first. Here's the quick story on how I woke up to the beauty of container technology.
+
+02:00-Saron Yitbarek
+
+So, a little while back, I was working on the code base for my website  and I brought in my friend Nadia to work on some features. I had been doing a pretty good job on my own keeping my code dry and readable and, of course, well tested. Onboarding a new developer would be easy. Right? Nope, wrong. It was pretty bumpy, especially when we were running specs.
+
+02:30-Saron Yitbarek
+
+The code worked, but we couldn't get all the tests to pass on both of our machines. We had weird time zone issues. Her version of Ruby on Rails was different from mine. It was the classic case of, "It works on my machine." "Well, it doesn't work on mine." I'd make changes until it worked for me, then it would all break when I sent it to Nadia.
+
+03:00-Saron Yitbarek
+
+I knew the struggle Nadia and I were going through was something all developers went through, even joked about. I just assumed it was part of the job, something you just gotta put up with. What I didn't realize is that there was finally a solution. Imagine there was a way to lower the barrier between people, a new approach where we can use whatever set of tools we prefer and still pass that work around with ease. Imagine there was a way to keep the work consistent as it moves from development to testing and into production, no matter how many people are working on it, or where those people are. Imagine that I had thought about containers before I wasted weeks doing it the hard way.
+
+03:30-Liz Rice
+
+A container is really, it's a process.
+
+Saron Yitbarek
+
+Liz Rice is a technology evangelist with Aqua Security. She's describing the thing that makes containers so useful, the fact that they wrap everything up in a neat transportable bundle.
+
+04:00-Liz Rice
+
+It's just like any other process, except it has a very restricted view of the world. So for example, you start a container. The process is given its own root directory, and it thinks that it's looking at the whole root directory of the whole computer, but it's actually only looking at a tiny subset of the file system.
+
+04:30-Saron Yitbarek
+
+By wrapping up an executable with all its dependencies, containers can run on any laptop or in any virtual machine in the cloud. It comes with its own executables, its own libraries and dependencies. Everything's contained in a container. So, and this is the magic part, a container is going to run exactly the same in every environment. That means developers can share applications without worrying about the old, "Works on my machine," issue.
+
+05:00-Saron Yitbarek
+
+Here's an analogy that might be helpful. You know Blue Apron? That service that delivers everything you need to make a meal? All nicely divided and portioned, recipe card and everything? Well, imagine if Blue Apron also brought you not just the pre-chopped ingredients, but a kitchen stove, and all your cutlery too. Everything you needed in a nice little box on your doorstep. That's a container. In my case, container technology would have made onboarding my friend Nadia a dream, easy as a Blue Apron dinner. VMs also give you a prepackaged deal, but that's where we have to leave the Blue Apron analogy behind and get to specifics.
+
+05:30-Liz Rice
+
+A lot of people are under the impression that containers are some sort of lightweight virtualization, lightweight virtual machines, and they're really not. It's very different from virtual machines. So a virtual machine has an entire operating system all to itself, whereas a container is sharing the operating system, you know, all the containers on one machine are sharing the same operating system.
+
+06:00-Saron Yitbarek
+
+Ultimately, containers and virtual machines are going to work side by side. Containers don't replace VMs. Virtualization is still going to increase efficiency in a date  system and it's still crucial for server consolidation. But the rise of containers is opening a new door that was closed to us before. Think of it this way, if we relied on VMs entirely, running all those emulated servers, we'd be creating enormous overhead.
+
+06:30-Saron Yitbarek
+
+A VM might be gigabytes in size, whereas a container could be 20 megabytes. A VM could take several minutes to boot up. That's not a great pace if I'm trying to deploy web-based APPs. A lightweight, faster alternative to full machine virtualization has been a long time coming.
+
+07:00-Saron Yitbarek
+
+So a little history. There was a move toward a type of proto-container back in 1979. Developers working on the U nix  V7 designed the root system call, which allowed for environments that contained only certain programs. That breakthrough pointed the way to the containers we have today. Another big step forward came with Linux containers in 2008. Now, we had Operation System-level virtualization.
+
+07:30-Saron Yitbarek
+
+We could finally run several containers using a single Linux kernel and that bypassed the need for full-fledged VMs. That means infrastructure costs start to drop. Not everybody saw the potential for containers right away.
+
+Laura Frank
+
+Containerization was really a genesis idea. It was something that was brand new.
+
+Saron Yitbarek
+
+Laura Frank is the director of engineering at CloudBees.
+
+08:00-Laura Frank
+
+Only a very small set of people understood the ins and outs and could operate the technology. And slowly over time, as more people are introduced to the idea and as more people begin to work on it and that knowledge is disseminated through engineering teams and engineering organizations and through communities, it becomes more available.
+
+Saron Yitbarek
+
+Because of that similarity to VMs we described earlier, Laura thinks the potential of containers got a bit lost.
+
+08:30-Laura Frank
+
+I think for where I was in my career and the general everyday technologist, containerization, if you weren't a Sys Admin or someone who had been deep in the guts of Linux, it was still kind of a new concept that I've had just passing familiarity with. So I kind of came to understand it as like, "Oh, this is kind of like how the pattern that I would use a virtual machine for, I can make a disposable environment that's totally isolated and then clean up really well after myself."
+
+Saron Yitbarek
+
+Containers were gonna do a lot more than keep things clean, though. They were going to revolutionize an industry. And with the rise of open-sourced projects and communities, soon enough container standardization became possible.
+
+09:00-Scott McCarty
+
+The interface became very simple.
+
+Saron Yitbarek
+
+Scott McCarty works at Red Hat as a senior strategist for containers. He's enough of a veteran that he remembers working at a time not just before containers, but pre-Virtual Machines too.
+
+09:30-Scott McCarty
+
+I worked at an online retailer in Dot-com 1.0 and we had thousands of physical machines, and we would deploy the same software stack over and over on all these different servers and we tried all different kinds of methodologies. It was really the same problem when you went from raw operating systems to virtual machines and then on to Linux containers, Solaris containers, you still had to manage the configuration across all these different virtual machines, essentially, or constructs that looked like operating system instances.
+
+Saron Yitbarek
+
+Once containers became standardized though, all that began to change.
+
+10:00-Scott McCarty
+
+Like, there were all these very standard ways to deal with this now   packed application, and I think that's fundamentally what really changed it all. It just made it really easy to use and then it didn't hurt that they were smaller and faster than virtual machines as well.
+
+10:30-Saron Yitbarek
+
+Building on the advances made by Linux containers, these new open-source  projects and communities took developers by the hand. Some of our anxieties about the back end were swept away. Suddenly containers, and the microservices they facilitated  were looking very attractive. Once a common container language emerged barriers fell away and container technology changed the way we worked. It also changed the speed that we could learn about new tech.
+
+11:00-Saron Yitbarek
+
+Remember all that back and forth with my coworker Nadia? With the whole, "It works on my machine," shtick? That problem doesn't exist in a container world. The developer community saw how fast and cheap and easy containers had become, so much easier than the standard operating systems we'd used before. The rate of adoption has been pretty stunning. But remember: the emergence of a container standard was really just a warm up lap for the real race—orchestration.
+
+The horses line up, the starting pistol fires  and they're sprinting at last for the championship. Not for containers themselves, but for the tools that would deploy and manage them.
+
+11:30-Saron Yitbarek
+
+I'm Saron Yitbarek, and this is Command Line Heroes. In the race to become the standard container orchestration engine, who would deliver the platform that manages all those containers? At first, there were two contestants who pulled into the lead.
+
+12:00-Saron Yitbarek
+
+Mesos, driven by Apache, and Swarm, driven by Docker. But then, what's this? A newcomer came tearing down the track. It was Google. Linux had set up the Cloud Native Computing Foundation and CNCF was pushing Google's new open-sourced orchestration engine, Kubernetes.
+
+12:30-Saron Yitbarek
+
+Now, Mesos and Swarm had headstarts on Kubernetes, right? They were backed by Apache and Docker, which had both been in this race for a while. But Kubernetes had something that the other horses were missing. And Clayton Coleman can tell us what that secret ingredient was. Clayton's an architect for Kubernetes and OpenShift, over at Red Hat.
+
+13:00-Clayton Coleman
+
+From the very beginning in Kubernetes, Google was very good at opening the project up and making it easy to contribute and participate. There was such a strong focus on making something that would make the majority of developers and operators lives easier. I think Kubernetes and the community around Kubernetes was able to find a sweet spot good enough for the majority of people and extensible enough to solve some of the more extreme use cases.
+
+Saron Yitbarek
+
+In the early days, Kubernetes involved engineers from Red Hat and CoreOS and Google. Then, as Kubernetes reached 1.0, people in startups and big companies began adopting it, building off it. And here's the thing. That growth was never dictated by Google, or anybody else.
+
+13:30-Clayton Coleman
+
+So, the analogy I love to use in this case is Linux. Linux didn't start by Linus writing the kernel and telling everybody in user space how to write GCC or how to go build NGINX or Apache. Instead, the kernel team focused on building a very effective core operating system and working with other open-sourced communities like the GNU project to bring the tools that worked on other Unix's into Linux.
+
+14:00-Clayton Coleman
+
+And so, many of the tools we run today, no one from the core Linux team has ever contributed to.
+
+But Linux as a whole is much broader than just the kernel, and I think that that pattern is something that we believe Kubernetes is well positioned to take advantage of. And so as we've built community and focused on scoping Kubernetes, we've tried to think of it in terms of a core Kubernetes, which is about the kernel of a distributed cluster operating system.
+
+14:30-Saron Yitbarek
+
+Kubernetes proved itself incredibly good at building community in an open-sourced world. Just like we saw in Episode Two with the rise of Linux, the winner in today's races is often the one who knows how to rally the community. In fact, while Google may have started Kubernetes, now it really belongs to every developer, and it's managed by the Cloud Native Computing Foundation.
+
+15:00-Saron Yitbarek
+
+On GitHub, Kubernetes has about 30,000 stars, while Swarm and Mesos have just a few thousand each. That's pretty telling right there. This is technology made by our community, and for our community.
+
+I wanted to understand their attitude. How does a massive for-profit company end up playing so well with others? And I found exactly the right person to answer that question. Kelsey Hightower is a technologist working at Google supporting all things container.
+
+15:30-Saron Yitbarek
+
+When you think about Google's position, they have a lot of experience doing distributive systems and running things on many, many servers all over the world, so they seem like they were in a really good position to do Kubernetes and to win, and to do this very well. So, when you think about the relationship between Kubernetes and open source, how do you see that relationship?
+
+16:00-Kelsey Hightower
+
+I think when it comes to infrastructure tools, and even programming languages, right, there's no choice. You can't really have a proprietary tool, even if it's great. Most people probably won't even look at it if it's not open source. And I think the reason there is that most people will adopt technologies like infrastructure tools like Kubernetes, and you may checkpoint yourself and say, "Well, we're gonna stick with this version for four or five years, or we need to modify it for maybe some of our own unique needs."
+
+16:30-Kelsey Hightower
+
+Once you get to that point, it's gonna be really hard to convince an enterprise to go down the road of, "Hey, it's gonna be $200 per server, and you can't see the source code, so wait for us to modify it."
+
+That road is gone. So I don't know if you can actually do infrastructuring anymore without it being open source. And then the second part of open source would be the community that can be attached to it, which I think Kubernetes nailed out of the gate.
+
+Saron Yitbarek
+
+So I wanna go back to the competition. Because it wasn't just Kubernetes as you mentioned yourself, there was Swarm by Docker, there was Mesos by Apache ...
+
+17:00-Kelsey Hightower
+
+So, I think when people talk about the battle, I don't know if the battle was really between Mesos and Docker, I think the battle was between people that have nothing. Right, you're coming from homegrown Bash scripts, you're still floundering around trying to get to where you need to be, and the market of people not using orchestration tools is much bigger than the people that have already chosen, let's say, Mesos or Swarm.
+
+17:30-Kelsey Hightower
+
+So that's what the battle is and will remain. So it's really about helping the end users now. Does Mesos or Kubernetes or Docker Swarm become the preferred choice for people looking to get into a better solution? That's all up for debate, but I'll tell you, people like me, the engineers working on this thing, if you put some of the marketing aside, some of the vendors aside, the people that work on this, I use this phrase “different companies, same teams.”
+
+18:00-Kelsey Hightower
+
+A lot of the tools that we build for each other, they end up in the other products some way or other. Right? A good idea is a good idea. So there's no reason to say, "Oh, that's what the Mesos people are doing, let's ignore it. That's kind of silly. So from an engineering standpoint, and a community standpoint, we cross-pollinate these ideas. You almost need that kind of competition so we can all think independently, the best ideas surface to the top and we pick and choose which ones to adopt that target the users in the right way.
+
+18:30-Kelsey Hightower
+
+So it's still early in terms of this whole competition thing, and again, this thing is zero dollars. You know what I mean? We're not selling this to anyone directly, so it's really more of a platform play, open for everyone, and then users will choose the ones that meet their needs and that's where I think Kubernetes has done a great job in terms of community, being open, and actually solving problems.
+
+Saron Yitbarek
+
+That was very beautiful. I really like this idea of playing on the same team regardless where that team exists. I like it. What do you see is the future of containers and orchestration and maybe even Kubernetes?
+
+19:00-Kelsey Hightower
+
+Yeah, so I gave a keynote at KubeCon about, like, all of these tools are great. They're all Lego bricks, you know, we got Kubernetes, you may pick another product for security, pick another product for networking, but at the end of the day, as a developer, you really just want to kinda check your coding and expect that code to land in front of your customer somehow, some way. And I think what Kubernetes will become, and containers will become, they will just become the substrate or just the platform pieces for higher   level things like serverless.
+
+19:30-Kelsey Hightower
+
+Right? Here's my code snippet, under the covers, all the platforms will take your code snippet, wrap it up in a container and run it for you, but they don't need to expose all that to you. So in the future, I think as Kubernetes becomes common, and it's going to level the playing field from big or small providers or people that want to do it themselves, to actually be able to offer these things that only cloud providers could have done, because of the expertise required or the investment in software that was required.
+
+This thing will probably end up everywhere, but it'll also be hidden. So it will disappear as it expands.
+
+20:00-Saron Yitbarek
+
+Kelsey Hightower is staff developer advocate at Google. In the fall of 2017, Docker announced they'd be supporting Kubernetes. They hadn't given up on Swarm, but they have decided to make peace with the obvious winner of the orchestration race.
+
+20:30-Saron Yitbarek
+
+They weren't alone, either, Azure and AWS both announced native support for Kubernetes. Meanwhile, Kubernetes distros, like OpenShift, are still evolving. What we're getting is a core Kubernetes that can extend and support new use cases, like microservices or continuous integration projects. Clayton Coleman.
+
+  .
+
+21:00-Clayton Coleman
+
+That ecosystem will work best with a model that resembles Linux and I think we're well on our way towards that outcome. So this, like all good open source projects, succeeds when everybody is able to participate together to build something that's better than what we could all build individually.
+
+21:30-Saron Yitbarek
+
+All this is happening fast. It is a race, after all, and that's something we've come to expect from open source. The first lap is almost over before we even had a grip on what containers are. Scott McCarty, from Red Hat.
+
+Scott McCarty
+
+So if you think back two years, you know, the container image format was a huge battleground and then I'd say if you go back six months to a year ago, orchestration was a huge battleground. And then if you look at KubeCon 2017 and the weeks leading up to it, pretty much every major vendor has now announced support for Kubernetes. And so, it's pretty obvious Kubernetes has won at this point.
+
+22:00-Saron Yitbarek
+
+One chapter in the story of containers is coming to a close. Almost as quickly as it began.
+
+Scott McCarty
+
+And so Kubernetes has become the standard, and the beauty there is that now application definitions have standardized. So, anybody can use Kubernetes objects in these YAML files and define applications, it's what we wanted for, literally, I've wanted this for like 20 years in dealing with large scale systems.
+
+22:30-Saron Yitbarek
+
+Kubernetes' success seems pretty concrete, but even after that big race is finished, we're still left with some bigger questions. Are containers going to become the default choice in the next couple years? Are they going to encourage more cloud native development? And what are all the tools and services that these shifts are going to inspire? Here's what we do know.
+
+23:00-Saron Yitbarek
+
+Through the CNCF, the community will continue to improve Kubernetes and as per the foundation's mission, we're also going to be building a whole new set of container technologies.
+
+Containers are already producing massive new levels of infrastructure and demanding whole new kinds of service. Just to give you a sense of how integral they've become, and how quickly, Netflix alone is launching more than a million containers every week. It's not a stretch to say that containers are the building blocks of the future.
+
+23:30-Saron Yitbarek
+
+This whole season, we've been tracking the evolution of the open source movement. We've seen how Linux rose to dominance in the first place and how open source attitudes have changed business, workflow, and the tools we use everyday. But containers really are one of the most important evolutions in that open source d  movement. They're mobile, they're lightweight, they're easily scalable.
+
+24:00-Saron Yitbarek
+
+Containers embody the best of open source and it's no wonder open source projects have driven the development of container technology. It's a new world. And we're not gonna be worried anymore about moving from machine to machine, or, in and out of clouds.
+
+24:30-Saron Yitbarek
+
+The standardization of containers is happening faster than anybody would have predicted. The next episode, we turn to a battle still very much up in the air. The cloud wars are bringing out industry heavyweights like nothing else. Microsoft, Alibaba, Google  and Amazon are facing off and the friction from those four cloud vendors is heating up into one serious storm. We're chasing that lightning along with some of our favorite Command Line Heroes, next time in Episode Six.
+
+25:00-Saron Yitbarek
+
+Command Line Heroes is an original podcast from Red Hat. For more information about this and past episodes, go to RedHat.com/CommandLineHeroes. Once you're there, you can also sign up for our newsletter. And to get new episodes delivered automatically for free, make sure to subscribe to the show. Just search for Command Line Heroes in Apple Podcast, Spotify, Google Play, CastBox, or however you get your podcasts. Then, hit subscribe, so you'll be the first to know when new episodes are available.
+
+I'm Saron Yitbarek, thanks for listening and keep on coding.

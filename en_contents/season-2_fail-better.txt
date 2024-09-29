@@ -1,0 +1,295 @@
+Failure is the heartbeat of discovery. We stumble a lot trying new things. The trick is to give up on failing fast. Instead, fail better.
+
+This episode looks at how tech embraces failure. Approaching failure with curiosity and openness is part of our process. Jennifer Petoff shares how Google has built a culture of learning and improvement from failure. With a shift in perspective, Jessica Rudder shows how embracing mistakes can lead to unexpected successes. And Jen Krieger explains how agile frameworks help us plan for failure.
+
+Failure doesn't have to be the end. It can be a step to something greater.
+
+00:00-Saron Yitbarek
+
+Stop me if you've heard this one. Two engineers are compiling their code. The newcomer raises his hands and shouts, "Woo, my code compiled!" The veteran narrows her eyes and mutters, "Hm. My code compiled."
+
+00:18-Saron Yitbarek
+
+If you've been in the coding game a little while, something changes when you think about failure. Things that used to look like impossible problems begin to look like healthy parts of a larger solution. The stuff you used to call “failure,” begins to look like success in disguise.
+
+You expect your code to not compile. You expect to play and experiment all along the way, fiddling, revising, refactoring.
+
+00:37-Saron Yitbarek
+
+I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat.
+
+That whole "fail fast" mantra, let's be honest, it often gets used as a way to try and shortcut things towards success. But what if, instead of telling each other to hurry up and fail fast, we encourage each other to actually fail better.
+
+01:20-Saron Yitbarek
+
+Season Two of Command Line Heroes is all about the lived experience of working in development, what it really feels like and how it really pans out when we're living on the command line. And that's why we're devoting a whole episode to dealing with failure, because it's those moments that push us to adapt. The stuff we call failure, it's the heartbeat of evolution, and open source developers are embracing that evolution. Of course, that's a lot easier said than done.
+
+01:59-Saron Yitbarek
+
+Imagine this: a brand-new sonnet from the man himself, Shakespeare, gets discovered. There's a huge rush of interest online. Everybody's googling. But then! This one little design flaw leads to something called, "file descriptor exhaustion." That creates a cascading failure. Suddenly, you've got all that traffic moving across fewer and fewer servers. Pretty soon, Google's Shakespeare search has crashed, and it stays crashed for over an hour.
+
+02:33-Saron Yitbarek
+
+Now you've lost 1.2 billion search queries. It's a tragedy of Shakespearean proportions, all playing out while site reliability engineers are scrambling to catch up.
+
+02:45-Actor
+
+Et tu, Brute? Then fall, Caesar.
+
+02:54-Saron Yitbarek
+
+Okay, hate to break it to you. The Shakespearean incident isn't real. In fact, it's part of a series of disastrous scenarios in a book called, Site Reliability Engineering. And one of the big lessons from that book is that you've got to look beyond the disaster itself. Here's what I mean.
+
+03:13-Saron Yitbarek
+
+In the Shakespeare case, the query of death gets resolved when that laser beam of traffic gets pushed onto a single, sacrificial cluster. That buys the team enough time to add more capacity. But you can't stop there. As bad as that issue was, resolving it isn't where the real focus should be. Because failure doesn't have to end in suffering, failure can lead to learning.
+
+03:38-Jennifer Petoff
+
+Hi. I'm Jennifer Petoff.
+
+03:41-Saron Yitbarek
+
+Jennifer works over at Google. She's a senior program manager for their SRE (site reliability engineering) team and leads Google's global SRE education program, and she's also one of the authors of that book, the one that describes the Shakespeare scenario. For Jennifer, digging into disasters like that is how things get better. But only if you have a culture where mistakes and surprises are embraced.
+
+04:08-Saron Yitbarek
+
+So take the Shakespeare snafu again. There is a straightforward solution. Load shedding can save you from that cascading failure. But the real work starts after things are back to normal. The real work is in the post-mortem.
+
+04:25-Jennifer Petoff
+
+After the incident is resolved, a post-mortem would be created. Every incident at Google is required to have a post-mortem and corresponding action items to prevent, but also to more effectively detect and mitigate similar incidents or whole classes of issues in the future.
+
+04:42-Saron Yitbarek
+
+That's a key distinction right there. Not just solving for this particular incident, but seeing what the incident tells you about a class of issues. Post-mortems, really effective ones, don't just tell you what went wrong yesterday. They give you insights about the work you're doing today, and about what you're planning for the future. That broader kind of thinking instills a respect for all those accidents and failures, makes them a vital part of everyday work life.
+
+05:12-Jennifer Petoff
+
+So, a really good post–mortem addresses more than just the single issue at hand, it addresses the whole class of issues. And the post-mortems focus on what went well, what went wrong, where we got lucky, and what prioritized action we can take to make sure this doesn't happen again. If you don't take action, history is destined to repeat itself.
+
+05:32-Saron Yitbarek
+
+At Google, there's a focus on blameless post-mortems, and that makes all the difference. If nobody's to blame when something goes wrong, then everybody can dig into errors in an honest way and really learn from them without covering tracks, or arguing. Those blameless post-mortems have become a key part of the culture at Google, and the result is a workplace where failure isn't something to be afraid of. It's normalized.
+
+06:01-Jennifer Petoff
+
+How does Google look at failure? 100% of time is an impossible goal, like, you're kidding yourself if you think that's achievable. So failure's going to happen, it's just a matter of when and how. Failure is celebrated at Google, so it's something we can learn from, and post-mortems are shared widely among teams to make sure that the things that are learned are widely available.
+
+06:23-Jennifer Petoff
+
+Failure is inevitable, but you never want to fail the same way twice. To err is human, but to err repeatedly is something that would be better avoided.
+
+06:34-Saron Yitbarek
+
+It's so interesting hearing the way Jennifer talks about failures, because it's like she's leaning into those mistakes. Like, when things go wrong, it means you've arrived at a place you can actually mine for value.
+
+06:50-Jennifer Petoff
+
+You deal with the situation in real time, but then afterwards taking time to write up what happened so that others can learn from that. With any incidents, you pay the price when it happens, and you're not re–collecting some of that cost if you don't write up a post–mortem and actually learn from that experience, and I think that's a critical lesson. We believe very strongly here at Google in a blameless culture. You don't gain anything by pointing fingers at people, and that just then sends people to cover up failure, which is going to happen, regardless.
+
+07:27-Saron Yitbarek
+
+It's so important here to remember something Jennifer said earlier, that error-free work is a fantasy. There will always be things that go wrong. What it comes down to is a shift in thinking. We can put away that idea that there's a single, definable end goal, where everything will finally go the way we imagined. There is no single there that we're trying to get to, and it turns out, that's a hugely powerful and positive thing.
+
+Google's push for embracing failure makes a lot of sense. Super practical. But I wanted to know, is this just lip-service? Do we have some concrete examples of failure actually making things better, or is it all just a way to make ourselves feel better when we're hitting compile for the 200th time?
+
+08:26-Saron Yitbarek
+
+Turns out, there's someone who can answer that.
+
+08:29-Jessica Rudder
+
+My name is Jessica Rudder. I'm a software engineer at GitHub.
+
+08:33-Saron Yitbarek
+
+Jessica has seen her share of failure over at GitHub. It's a failure arena, in one sense, and along the way, she's collected some stories about times when failure was the doorway to massive success. Like this one:
+
+08:50-Jessica Rudder
+
+So there was a game development company that was working on a brand-new game in the '90s. Essentially, it was a racing game, but their twist on it was that it was going to be street racing. So as the racers are racing through the streets, they're not only racing each other, but they're also NPCs (non-player characters) that are cop cars that are chasing them down. And if a cop car catches you, it's supposed to pull you over and then you lose the race. So they get this code all wired up, and they start running it, and what they discovered is that they completely calibrated the algorithm wrong, and instead of the cop cars chasing the players' vehicles, they would just come screaming out of side streets and slam right into them.
+
+09:37-Jessica Rudder
+
+So it was just a total mess. And instead of freaking out, they thought, let's go ahead and see how people like it, and that way we know what to tweak about the algorithm. So they sent it over to the play testers, and what they found was that the play testers had way more fun running away from the cops and trying to dodge being captured by these rogue, violent cop cars than they ever had with just the racing game itself. And it was so much fun, in fact, that the development team shifted the entire concept that they were building the game around.
+
+10:17-Saron Yitbarek
+
+Can you guess where this is going?
+
+10:21-Jessica Rudder
+
+And that's how we ended up with Grand Theft Auto. I mean, it's literally the best-selling video game franchise of all time, and the whole reason it exists is because when they failed to get the algorithm right, they thought, well, let's try it out. Let's see what we've got, and let's see what we can learn from it.
+
+10:41-Saron Yitbarek
+
+Sort of amazing, right? But here's the trick. The Grand Theft Auto team had to stay receptive when they were hit with a failure. They had to stay curious.
+
+10:52-Jessica Rudder
+
+So if those developers hadn't been open–minded about it, and decided to see what they could learn from this mistake, we would never have had Grand Theft Auto. We would have had some boring, run–of–the–mill street race game.
+
+11:07-Saron Yitbarek
+
+Sticking with the game theme for a minute, something similar happened when Silent Hill was being produced. This was a huge, triple-A game—big-time production. But they had serious problems with pop-up. Parts of the landscape weren't being processed fast enough, so all of a sudden you get a wall or a bit of road popping up out of nowhere. This was a deal-breaker problem, and they were late in their development cycle. So what do they do? Scrap the game entirely? Throw their hands up? Or embrace the problem itself?
+
+11:42-Jessica Rudder
+
+What they did was fill the world with a very dense, eerie fog. Because fog, as it turns out, is really easy for the processors to render and not get any kind of delays. But additionally, fog prevents you from seeing things at a distance, so in reality, those buildings are still popping in, but you can't see it anymore because the fog is blocking your view. So when they do come into view, they're already rendered, and it looks like they're coming out of the fog, instead.
+
+12:15-Saron Yitbarek
+
+The fog became so well-loved that it's basically considered another character in the Silent Hill franchise. It makes the game play way scarier by limiting the player's vision. And even when the processors got so fast that they didn't need to cover up those pop-ups anymore, they kept the fog.
+
+12:33-Jessica Rudder
+
+You cannot have a Silent Hill game without fog. And all that fog was doing initially was covering up a mistake.
+
+12:40-Saron Yitbarek
+
+I love it! They saved a major development by embracing their failure instead of running from it. And that rule about not fearing failure applies to little, individual things, too, not just company-wide decisions. Looking failure calmly in the face is how we get better, bit by bit.
+
+13:01-Jessica Rudder
+
+A lot of times people get too much into their own head and they think a failure means I'm bad at x. It's not, oh, this code is broken and I don't know how to fix it, yet. It's, “I don't know how to write JavaScript.” And you are never going to learn what you need to learn by saying, “I don't know how to write JavaScript.” But if you can identify, oh, I don't know how to make this loop work in JavaScript, then you have something that you can Google, and you can find that answer, and it just works perfect. I mean, you're still going to struggle, but you're going to struggle a whole lot less.
+
+13:36-Saron Yitbarek
+
+So our mistakes nudge us toward bigger things, those experiments, those fails, those heroic attempts, they make up most of the journey, whether you're a new developer or the head of a major studio. And nowhere is that more true than in the open source communities I've come to know and love. Failure can be a beautiful thing in open source, and that's where our story goes next.
+
+14:14-Saron Yitbarek
+
+We saw earlier how failing well can lead to happy surprises, things we didn't even know we wanted to try. And at its best, open source development culture hits that mark. It makes failure okay. To understand how that willingness to fail gets baked into open source development, I got chatting with Jen Krieger. She's Red Hat's chief agile architect. We talked about attitudes toward failure in open source, and how those attitudes shape what's possible. Take a listen:
+
+14:47-Saron Yitbarek
+
+I want to touch on this mantra, I feel is probably a good way to put it. The "fail fast and break things," which is a big rally cry, almost, I feel like, for our community. What are your thoughts on that?
+
+15:04-Jen Krieger
+
+I have a lot of thoughts on that.
+
+15:06-Saron Yitbarek
+
+I thought you might.
+
+15:06-Jen Krieger
+
+Fail fast, fail forward, fail quickly—all those things. So to put that into context, in the early days of my career, I worked in a company where there was no room for failure. If you did something wrong, you brought down the one application. There was really no way, no room, really, for anybody to do anything wrong. And that just really wraps people around the axle, that idea that you have absolutely no room for failure, led us into almost like a cultural movement, if you would, that then spawned into that wonderful word, agile, into the wonderful word, DevOps. When I look at those words, all I'm seeing is that we're simply asking teams to do a series of very small experiments that help them course-correct.
+
+16:02-Jen Krieger
+
+It's about, oh, you've made a choice, and that's actually a positive thing. You might take a risky decision, and then you win, because you've made the right decision. Or the other side, which is, you've made the wrong decision and you understand now that that wasn't the right direction to go in.
+
+16:18-Saron Yitbarek
+
+Yeah, that makes sense. So when you think about "fail fast and break things" as being this movement, it feels like there's still some structure, some best practices in how to fail, how to do that the right way. What are some of the best practices and the principles around failing in a way that is good in the end?
+
+16:44-Jen Krieger
+
+I always like to tell engineers that they need to break the build as early and as often as possible. If they're breaking their build and they're aware that they've broken the build, they have the opportunity in the moment to actually fix it. And it's all wrapped around that concept of feedback loops, and ensuring that the feedback loops that you're getting on the work that you're doing are as small as possible.
+
+17:08-Jen Krieger
+
+And so in open source development, I submit a patch, and somebody says, “I'm not going to accept your patch for these nine reasons,” or “I think your patch is great, move forward.” Or, you might be submitting a patch and having a bot tell you that it's failed because it hasn't built properly. There's all sorts of different types of feedback.
+
+17:25-Jen Krieger
+
+And then in open source development, you might also have longer feedback loops where you say, “I want to design this new functionality, but I'm not entirely sure what all the rules should be. Can somebody help me design that?” And so you go into this long process where you're having long and detailed conversations where folks are participating and coming up with the best idea.
+
+17:45-Jen Krieger
+
+And so there's all sorts of different feedback loops that can help you accomplish that.
+
+17:50-Saron Yitbarek
+
+Jen figures those feedback loops can look different for every company. They're customizable, and people can make them work in 100 different ways. But the point is, she's not even calling them failures or mistakes. She's just calling them, "feedback loops." It's an organic system. Such a healthy way of thinking about the whole process.
+
+18:11-Saron Yitbarek
+
+Meanwhile, there's one attitude toward those little glitches that has the exact opposite effect.
+
+18:18-Jen Krieger
+
+There are things that organizations do that are just flat-out the wrong thing to do.
+
+18:23-Saron Yitbarek
+
+Mm-hmm (affirmative).
+
+18:24-Jen Krieger
+
+Having your leadership team, or, at a very high level, the organization thinking that shaming people for doing something wrong or instilling fear in relation to performance results; and that looks like, “If you don't do a good job, you won't get a bonus,” or “If you don't do a good job, I'm going to put you on a performance plan.” Those are the types of things that create hostility.
+
+18:50-Saron Yitbarek
+
+What she's describing there is a failure fail. A failure to embrace what failure can be. And she's echoing Jennifer Petoff's attitude too, right? That idea about blame-free post-mortems we heard about at the top of the episode?
+
+19:07-Saron Yitbarek
+
+Yeah, that's interesting. It's like if we are a little bit more strict around how we work together, or maybe just more mindful, more purposeful in how we work together, we will be almost forced to be better at our own failure.
+
+19:23-Jen Krieger
+
+Yes. And there's companies out there that have learned this already, and they've learned it a long time ago, and Toyota is a perfect example of a company that embraces this concept of continuous learning and improvement in a way that I rarely see at companies. There is just this idea that anyone at any point can point out something that isn't working properly. It doesn't matter who they are, what level of the company they're in. It's just understood in their culture that that's okay. And that environment of continuous learning and improvement, I would say, would be one of those leading practices, the things that I would expect a company to do to be able to accommodate failure and to allow it to occur.
+
+20:06-Saron Yitbarek
+
+Mm-hmm (affirmative). Yeah.
+
+20:07-Jen Krieger
+
+If you're asking questions about why things aren't going well, instead of pointing fingers or trying to hide things, or blaming others for things not going well, it creates an entirely different situation. Changes the conversation.
+
+20:23-Saron Yitbarek
+
+And it's interesting because you mentioned earlier how the break things "fail fast and break things" mantra was this culture, this kind of push-back against the way things used to be done. But it sounds like that mantra has also created maybe a different way that teams work within a company, within a tech team. Tell me a little bit more about that. How has it changed the way developers see their roles and how they interact with other people in the company.
+
+20:55-Jen Krieger
+
+My early days of working with engineers pretty much looked like, the engineers all sat in a small area. They all talked to one another. They never really interacted with any of the business people. They never really understood any of their incoming requirements, and we spent an awful lot of time really focused on what they needed to be successful, and not necessarily what the business needed to actually get their work done. So it was much more of a, “I'm an engineer, what do I need in order to code this piece of functionality?” What I observe today in pretty much every team that I work with, the conversation has shifted significantly to not, “What do I need as an engineer to get my job done,” but “What does the customer, or what does the user need to actually feel like this piece of functionality that I'm making is going to be successful for them? How are they using the product? What can I do to make it easier for them?”
+
+21:56-Jen Krieger
+
+A lot of those conversations have changed, and I think that's why companies are doing better today on delivering technology that makes sense. I will also say that the faster we get at releasing, the easier it is for us to know whether or not our assumptions and our decisions are actually coming true. So, if we make an assumption about what a user might want, before, we were having to wait, like, a year to two years to really find out whether or not that was actually true.
+
+22:25-Jen Krieger
+
+Now, if you look at the model of an Amazon or Netflix, they're releasing their assumptions about what their customers want, like, hundreds of times a day. And the response they get from folks using their applications will tell them whether or not they're doing what it is the users need them to be doing.
+
+22:46-Saron Yitbarek
+
+Yeah, and it sounds like it requires more cooperation, because even the piece of advice you gave earlier about build, break the build, break it often. That kind of requires the engineering team or the developers to be more in step with DevOps, right, in order for them to break it, and to see what that looks like to do those releases early and to do them often. It sounds like it requires more cooperation between the two.
+
+23:15-Jen Krieger
+
+Yeah, and it's always amusing to somebody who has that title, agile coach, or in my case, chief agile architect, because the original intent of the Agile Manifesto is to get folks to think about those things differently. We are uncovering better ways of developing software by doing it and helping others do it. It is really the core, heart, and foundation of what agile is supposed to do. And so, if you fast forward the 10, 15+ years to the arrival of DevOps and the insistence that we have continuous integration and deployment. We have monitoring, we start thinking differently about throwing code over the wall.
+
+23:56-Jen Krieger
+
+All that stuff is really what we were supposed to be thinking back when we originally started talking about agile.
+
+24:03-Saron Yitbarek
+
+Mm-hmm (affirmative). Absolutely. So regardless of how people implement this idea of failure, I think that we can both agree that the acceptance of failure, the normalizing of failure is just a part of the process, something that we need to do, something that happens that we can manage, that we can maybe do the "right way," is a good thing. It has done some good for open source. Tell me about some of the benefits of having this new movement, this new culture of accepting failure as part of the process.
+
+24:36-Jen Krieger
+
+It's a beautiful thing to watch that process happen. For somebody to go from being really in a situation where they're fearful of what might happen, to a place in which they can try to experiment and try to grow, and try to figure out what might be the right answer. It's really great to see. It's like they blossom. Their morale improves, they actually realize that they can own what it is that they are. They can make decisions for themselves, they don't have to wait for somebody to make the decision for them.
+
+25:05-Saron Yitbarek
+
+Failure as freedom. Ah, I love it! Jen Krieger is Red Hat's chief agile architect.
+
+25:19-Saron Yitbarek
+
+Not all open source projects reach the fame and success of big ones, like Rails or Django, or Kubernetes. In fact, most don't. Most are smaller projects with just a single contributor. Niche projects that solve little problems that a small group of developers face, or they've been abandoned and haven't been touched in ages. But they still have value. In fact, a lot of those projects are still hugely useful, getting recycled, upcycled, cannibalized by other projects.
+
+25:54-Saron Yitbarek
+
+And others simply inspire us, teach us by their very instructive wrongness. Because failure, in a healthy, open source arena, gives you something better than a win. It gives you insight. And here's something else. Despite all those dead ends, the number of open source projects is doubling about every year, despite all the risky attempts and Hail Marys; our community is thriving, and it turns out, we're not thriving despite our failures, we're thriving because of them. Next episode, how security changes in a DevOps world. Constant deployment means security's working its way into every stage of development, and that is changing the way we work. Meantime, if you want to learn more about open source culture and how we can all change the culture around failing, check out the free resources waiting for you at redhat.com/commandlineheroes.
+
+26:54-Saron Yitbarek
+
+Command Line Heroes is an original podcast from Red Hat. Listen for free on Apple Podcast, Google Podcast, or wherever you do your thing. I'm Saron Yitbarek. Until next time, keep on coding.

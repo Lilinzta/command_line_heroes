@@ -1,0 +1,375 @@
+It's the turn of the 21st century. Open source software is changing the tech landscape. But new patterns of work have now become necessary. Developers search for a revolutionary approach that will allow open source development to flourish. A group of developers convene at a ski resort in Utah. What emerges is a manifesto that changes everything.
+
+Dave Thomas, one of the authors of the "Manifesto for Agile Software Development", brings us back to that now famous retreat where the agile revolution was first organized. Not everyone was as quick to sign on to this new approach, though, and in this episode, we hear why.
+
+Saron Yitbarek
+
+There are certain stories that end up defining an industry. Stories we tell ourselves about where we come from, who we are, what we do. Last episode, we tracked the rise of Linux® , an open source technology. This story though, this one’s about what happened next. After the OS wars, developers were front and center.
+
+00:30-Saron Yitbarek
+
+And that new prominence meant they were going to reinvent their jobs. This episode, we'll learn how a focus on the developer brought about an entirely new methodology for software development. And how that new approach to workflow is having an unexpected impact—far beyond the action on our screens.
+
+I'm Saron Yitbarek and this Command Line Heroes, an original podcast from Red Hat. Episode three, The Agile Revolution. Today's story begins in February 2001, and it's set at a ski lodge in Utah.
+
+01:00-Dave Thomas
+
+We turned up at a lodge, you know, the pine beams and the fireplace, and the entry way. We got there the night before, and we basically just sat around and talked about what we're going to talk about. And the next day, we turned up, and we'd reserved a meeting room. We took the tables and moved them out to the edge. And we just put the chairs in a circle, or an oval so we could basically be facing each other and somewhat more open.
+
+01:30-Saron Yitbarek
+
+These guys were open source developers, so staying open was kind of their thing. That was Dave Thomas, Dave and 16 others got together at Snowbird Ski Resort that winter. Not to ski, but to talk about what was wrong with the developers world in the 1990's. I say talk, but argue might be more like it. They had originally met at a conference called OOPSLA, Object-Oriented Programming, Languages and Systems.
+
+02:00-Saron Yitbarek
+
+And it was actually at that conference that they realized they all agreed that creating software was messy. They just hadn't agreed on what they should do about it.
+
+So, the meeting on the mountain at Snowbird, that was where they were going to try and nail down a solution to that problem. And what was that problem exactly? I asked Dave what was wrong with the way developers used to do things.
+
+Dave Thomas
+
+So, have you ever ... I don't know, decorated a room-
+
+Saron Yitbarek
+
+I've tried.
+
+02:30-Dave Thomas
+
+... Or had ... Okay. If I said to you, upfront, “I want you to sit down please, here's a piece of paper. And I want you to specify exactly what this room should look like when you're finished.” Right?
+
+Saron Yitbarek
+
+Mm-hmm (affirmative).
+
+Dave Thomas
+
+Could you do that?
+
+Saron Yitbarek
+
+Actually, I did this for my own office. I tried making up a little sketch, and a little rendering and putting all the shelves where I thought they would be. It didn't really work though. It didn't end up the way that I planned.
+
+Dave Thomas
+
+But, even if you do that, what do you do? You put the shelves up, and you go, "Oh ... that's not going to work because the door is going to get in the way." So, you move the shelves somewhere else, or you say, "You know what, I can't really put carpet there because my chair is going to get stuck on it." Whatever it might be.
+
+03:00-Dave Thomas
+
+You always are going to iterate whenever it involves any unknowns at all. The human brain is just not up to modeling the real world accurately enough to be able to know what it wants upfront. So, software development is the same. People don't know upfront what they want. Right?
+
+Saron Yitbarek
+
+Mm-hmm (affirmative).
+
+03:00-Dave Thomas
+
+And the number of times where I have gone through that process, where I've got a spec from a customer and I have implemented it pretty much identical to that spec. It gets to the end, and they go, "But that's not what we wanted." And you go, "But that's what you asked for." And they said, "Yeah but that's not what I meant." You know?
+
+Saron Yitbarek
+
+Mm-hmm (affirmative).
+
+Dave Thomas
+
+So, this whole process that you can specify, and then move through some mechanical sort of steps, and then at the end you're done.
+
+Saron Yitbarek
+
+Yeah.
+
+04:00-Dave Thomas
+
+Doesn't work in software. It doesn't work in anything where there is ambiguity. It doesn't work in anything where there is some degree of judgment. Almost like any "artistic" endeavor, it's just not going to work. There always has to be feedback, and that was the missing step.
+
+Saron Yitbarek
+
+So, maybe you've heard of the software crisis that ran through the 1990's. Software development at the time was just a mess. Companies were spending more money fixing software than they were creating it in the first place. And meanwhile, developers like you and me, we were log jammed. In some cases, we could only put new software out every few years.
+
+04:30-Saron Yitbarek
+
+We were stuck with these sluggish, old, waterfall, workflows. A to B to C, totally predetermined. So, the search for new processes, for better ways to get software made, was sort of all consuming at the time. In fact, every month there seemed to be somebody new who had a grand vision for how they were going to fix the software development process.
+
+04:30-Saron Yitbarek
+
+We were stuck with these sluggish, old, waterfall, workflows. A to B to C, totally predetermined. So, the search for new processes, for better ways to get software made, was sort of all consuming at the time. In fact, every month there seemed to be somebody new who had a grand vision for how they were going to fix the software development process.
+
+05:00-Saron Yitbarek
+
+There was extreme programming, there was Kanban, there was rational unified process, the list goes on. The methodology wars saw a slew of competing new visions, new fixes. And that was the scuffle Dave Thomas, and his buddies up at Snowbird, were stepping into.
+
+Their own salvo was something called the manifesto for agile software development. The speed of production was ramping up like never before—open source had made developers more powerful. And, in turn, developers needed a new, more agile mode of production.
+
+05:30-Saron Yitbarek
+
+The guys who met at Snowbird argued a long time before landing on that word, by the way. Agile. In the end, it was the descriptor that made sense. It's how you describe big cats in National Geographic. A word that describes the exact opposite of a waterfall’s preordained path. As new information came up, it's a word for people willing to change course on a dime. And notice that it's not a noun, it's an adjective.
+
+06:00-Saron Yitbarek
+
+Agile would be a mode of being, not a concrete saying. So, what did those agile guys have to offer? What was their big solution? The agile that many of us know today is a complex set or roles and systems. You've got a scrum master, a scrum team, a product owner. And they're all going through one or two week sprints of work.
+
+06:30-Saron Yitbarek
+
+Meanwhile, work is piling up in ice boxes, and sand boxes, and well, let's say it can feel like a lot of process. But none of that was there at the beginning. The guys who wrote that manifesto aimed for simplicity, and clarity. The vision was so simple, in fact, that it had the power to define the path of almost every developer's destiny from then on.
+
+Dave Thomas
+
+We came up with the, we prefer A over B, way of expressing the values. And we actually wrote down pretty much the full values that are now part of the manifesto over lunch.
+
+Saron Yitbarek
+
+Four big ideas that could govern development. In case you don't know those agile commandments by heart, they go like this:
+
+07:00-Saron Yitbarek
+
+Individuals and interactions over processes and tools. Working software over comprehensive documentation. Customer collaboration over contract negotiation. Responding to change over following a plan.
+
+07:30-Saron Yitbarek
+
+remember the first time I encountered the manifesto. I was newish to coding, and to be honest, I didn't get what the big deal was. Until I understood the tools and platforms that make agile work, to me, it was just some fuzzy concepts. But, for developers who had been struggling with these issues for a long time, it was a call to action.
+
+The manifesto was designed to be a spark that could inspire something bigger. These four values and some supporting material were posted on a website, Agilemanifesto.org, and they just straight up asked other developers to sign their names to show support.
+
+08:00-Dave Thomas
+
+I think we were all stunned, when we got to 1,000 signatures, and then 10,000, and then it just keep growing and growing. It basically, it became a movement.
+
+Saron Yitbarek
+
+It was never their plan to walk out of that ski lodge with a manifesto, per se. They were just a group of people passionate about software development who felt a kind of evangelical zeal about helping others do development better. It became clear though, that agile had legs. Red Hat's ®  chief developer advocate, Burr Sutter, talks about what a relief agile was for developers trapped under a waterfall.
+
+08:30-Burr Sutter
+
+So, the concept of agile fundamentally resonated with people because it basically said, "Look, we focus on people over processes. We focus on interactions and collaboration over tools and documentation. We value working software above all else, and we'd rather people work in small batches and be highly interactive and highly iterative."
+
+09:00-Saron Yitbarek
+
+For some, this developer's revolution went too far. Agile could even be seen as legitimizing an irresponsible hacker mindset. One of the most important voices that spoke out against agile early on was Steve Rakitin. He's a software engineer with over 40 years experience in the industry.
+
+09:30-Saron Yitbarek
+
+When he finished college, Rakitin went to work building the first digital control system for nuclear power plants. And for decades, he's kept on working on power plant software and software for medical devices. Safety-critical software. So, yeah. You can imagine that this is a guy not so interested in a fly-by-the-seat-of-your-pants approach.
+
+So, when agile came out at the tail end of the methodology wars, Rakitin sort of rolled his eyes.
+
+Steve Rakitin
+
+It was like, “Well, here we go again, another bunch of people sat around drinking beer and coming up with other ideas for developing software.” Many of which, by the way, had already been developed and used in some of these earlier methods.
+
+10:00-Saron Yitbarek
+
+He wasn't wrong about giving them side eyes either. You can track back agile-ish philosophies decades before the Snowbird summit. For example, lean work full methodologies like Kanban go all the way back to the 1940's when Toyota got inspired by shelf-stocking techniques at supermarkets..
+
+Their philosophy for lean manufacturing ended up being repurposed for software development. Rakitin had a whole other concern too.
+
+10:30-Steve Rakitin
+
+I was very skeptical when this manifesto was published because it basically came across as a way to allow software engineers to spend more time writing code, less time figuring out what needs to be done, and a lot less time documenting anything.
+
+Saron Yitbarek
+
+For Rakitin, this was about more than coming up with new workflow ideas. It was about the integrity of his profession.
+
+11:00-Steve Rakitin
+
+For a long time, software engineering was not viewed as a legitimate engineering discipline like electrical engineering, and all the other engineering disciplines. And in my opinion, part of the reason was because there was a general lack of accepted practices that software engineers used.
+
+11:30-Steve Rakitin
+
+As we got through the decade of the 90's, and we started identifying some of these processes, it seemed like some of them were actually starting to take hold, and many of them made a lot of sense.
+
+Then comes along the manifesto. If software engineering is ever going to become a legitimate engineering discipline, you need to process. Every other engineering discipline has processes, why not software?
+
+12:00-Saron Yitbarek
+
+I'm Saron Yitbarek, and you're listening to Command Line Heroes, original podcast from Red Hat. So, if we leave aside people working at nuclear power plants, and focus instead on the larger corporate world, we find that agile has bit by bit taken over. But, not without a little corporate resistance, naturally.
+
+Darrell Rigby
+
+I think the greatest resistance that we tend to see in agile adoption comes from senior and middle management.
+
+12:30-Saron Yitbarek
+
+This is Darrell Rigby, a partner at Bain & Company. They've been experimenting with using agile at software development companies. But, also with product development, news service development, advertising programs, and loyalty programs. And everywhere they go, there's the potential for the managers to get a little nervous.
+
+Darrell Rigby
+
+It changes the very notion of how they believe they add value because they're moving away from micromanaging, or micro-meddling, with these teams to empowering them, and coaching them.
+
+13:00-Saron Yitbarek
+
+Now, agile is no guarantee against micro-meddlers. I admit, the first time I saw an agile management board, I thought it was a never- ending to-do list. A bit overwhelming. But then I started actually using an agile product management tool. And I was blown away. I was new out of a coding bootcamp, and I was trying to figure out how to prioritize features and make product decisions.
+
+13:30-Saron Yitbarek
+
+That scary-looking tool forced me to organize all these ideas, and give them names, order, and structure. It helped me manage my project. So, I do take Rigby's point. Some people might look at the effect of tools like that and think, if agile empowers developers, then it must disempower their managers.
+
+But, this was larger than any one job title. Agile's forward momentum was growing. And more importantly, agile was proving itself.
+
+14:00-Darrell Rigby
+
+Agile has been used by tens of thousands of teams at this point. So, we've got a lot of great data on where agile can be used. The answer is, any time you're thinking about doing innovation, an agile team can probably do it better than the way you're doing it today.
+
+14:30-Darrell Rigby
+
+There are a lot of bigger, well-known companies that have transformed themselves. Amazon is a big user of agile approaches. Netflix, Facebook, and Salesforce—all of them heavy users of agile, and it has really not just redefined the way they work, but the way the industry works.
+
+Saron Yitbarek
+
+When Rigby first heard about agile, he thought it was just a weird language. He was working with the IT departments at a lot of big retailers. And he kept hearing them talk about time boxes, and sprints, and scrum masters. At first, he didn't have a clue what they were talking about. He told me he actually tried to ignore any mention of agile, like it was another language he didn't have to learn. After all, he wasn't a developer himself.
+
+15:00-Saron Yitbarek
+
+Today, he's such a believer that he's literally brought agile to his home, and into his church.
+
+Darrell Rigby
+
+I do not necessarily sit down with my family every morning and have a scrum meeting with them. But, I have become very good at prioritizing the things that I'm going to do.
+
+15:30-Saron Yitbarek
+
+Agile has gone from fringe to mainstream in just over a decade. But, the corporate assimilation came at a cost. And in some cases, that assimilation even met bastardizing the manifesto’s original intentions. Dave Thomas reminded me of that. He says that when he and those 16 other Snowbird guys first wrote it, there was no real prescription at all.
+
+16:00-Saron Yitbarek
+
+So even though the manifesto doesn't tell you how to apply the values, I'm assuming you had some idea of what you thought would happen or what people would do with it.
+
+Dave Thomas
+
+Honestly, I did not.
+
+Saron Yitbarek
+
+This might surprise you. Agile can seem so prescriptive today. There's a whole marketplace of books, certifications, tools, courses, and products that show you how to "do agile."
+
+But despite the thousands of manuals and professionals who want to show you the one true way, Dave Thomas says, they're really missing the whole point.
+
+Dave Thomas
+
+It's a set of values.
+
+16:30-Saron Yitbarek
+
+Mm-hmm (affirmative).
+
+Dave Thomas
+
+It's like the golden rule, I guess. It's like, you know, if you're about to do something evil and vicious you think, “Okay, how would I like it if someone did that to me.” You know? The golden rule applies.
+
+Well, it's the same with the Agile Manifesto. It's not telling you what to do, and what not to do, it's just telling you how to assess whether or not what you do is in line with that kind of way of doing things.
+
+17:00-Saron Yitbarek
+
+Yep. I think that just going back to that name of manifesto for agile software development, the one word that really stands out and that has been very persistent, and people really latched onto is the word agile. What is wrong with the use of the word agile today?
+
+17:30-Dave Thomas
+
+The problem with the word agile is that, in the title that we came up with, it is an adjective that describes software development. But what happens then is that people say, "How do I do this agile thing?"
+
+18:00-Dave Thomas
+
+Suddenly, out of the wood work springs a whole army of consultants, and consultancies, who look at the success of XP, look at the success of the manifesto, and say, "Hey, there's gold in them there hills." So, they start telling people how to "do agile." And that is a problem because you can't do agile. Agile is not what you do, it's how you do it.
+
+And yet, there are companies out there who will happily sell you agile in a box. That, I think, is a travesty. The consult here is to go into a Fortune 1,000 company and help them set up "agile". They're walking away with five million dollars. You know? Great, good for them.
+
+18:30-Dave Thomas
+
+But, the reality is, that that's like telling a tiger to be agile by saying, “Take seven steps and then spring off your left foot, and then take two more steps, and spring off your right foot.” Well, that only works if the gazelle is doing the same thing. And guess what? No one has told the gazelle to be agile that way. It's basically running off to the horizon laughing its horns off because the tiger has gone the wrong way.
+
+19:00-Dave Thomas
+
+Same thing happens when you tell a team how to be agile. If you say to them, “Here are the rules you have to follow, here is the processes you have to follow,” then the last thing they have is a duty because they have been boxed into a particular path. Management is going to be judging them based on how well they follow those principles, or those procedures. Not on how well they're developing software.
+
+19:30-Saron Yitbarek
+
+So, looking back, when you think about the role of the developer before the manifesto, and then now after the manifesto, how has the role of the developer changed, or expanded, because of what you wrote?
+
+Dave Thomas
+
+To their credit, I think that the majority of programmers out there get it. I think that the manifesto has empowered a lot of developers to start following practices that, to some extent, they knew they should have been doing, but they never really had the authority to do.
+
+20:00-Dave Thomas
+
+Things like testing, for example, things like gathering feedback, things like short iterations. So, in many ways, the job is more interesting and more fulfilling.
+
+I think, also, programmers are feeling a little bit more scared because now they have responsibility. In the old days, I was just following orders. Why doesn't this program work? Well, I followed the spec. Whereas nowadays, it's on your shoulders.
+
+20:30-Dave Thomas
+
+So, I think the job has grown up a bit because of the manifesto. I think people are beginning to realize that they have an end-to-end responsibility for what they deliver.
+
+21:00-Saron Yitbarek
+
+The success of agile has been so pervasive, that it's altering workflow and attitudes far beyond the development world—certainly beyond the Snowbird Lodge. We have to ask, “What does it even mean to be an agile developer today versus 2001 when the manifesto was written?”
+
+Does the original spirit of agile persist? And if it did change, is that such a bad thing? For Ruha Devanesan, a diversity business partner at Google, the agile mindset might have evolved to the point where it's now  influencing basic levels of fairness and workplace equality.
+
+21:30-Ruha Devanesan
+
+Part of what makes teams inclusive is their ability to evaluate and reflect on how they work together on a very fundamental level. And most teams, when they work together, don't get the space to do that. They don't get the space to stop and think about their team dynamics, about whether everyone is having a voice at the table, about whether someone is steamrolling someone else. Or whether someone is silent the entire time. And if they are silent, why are they silent?
+
+22:00-Ruha Devanesan
+
+So, when thinking about inclusion, I thought that some of the tools that agile teams use could be very useful in giving teams a structure, or a framework to be more inclusive. So diversity not just in terms of gender, and race, and ethnicity, but also functional diversity. And functional diversity introduces complexity into a team.
+
+22:30-Saron Yitbarek
+
+But, let’s make a distinction here. Ruha is not saying that agile equals diversity. She's saying, “Agile plus diversity equals better teams.” Ruha's ideas were crystallized in an article she wrote called,Can Agile Methodology Unlock Diversity. We'll throw a link in our show notes—it's worth the read.
+
+In it, she walks you through this idea that diversity isn't just a fuzzy concept your HR department keeps talking about. It's actually a strong business case here. Intentionally creating an inclusive workplace by leveraging the tools agile gives us can improve rates of innovation. Diversity can dovetail with agile.
+
+23:00-Ruha Devanesan
+
+So, that introduction of complexity for the end goal of having an outcome or a product that has been looked at from many angels. That's the same fundamental point of view that we take when we say adding diversity to a team leads to a good outcome, leads to more innovation, and more creativity, because when you have multiple perspectives looking at a problem, helping to do problem-solving work, you're more likely to come out with an outcome that is more robust.
+
+23:30-Saron Yitbarek
+
+Even something as simple as a daily stand-up, where everybody on your team gets to report is going to give voice to introverts, or other people who have a hard time being heard.
+
+Ruha Devanesan
+
+The thing I really like about agile is it has some built-in mechanisms to help teams stop and reflect. And that may be because agile is so quick, and with two-week sprints, if you don't build in those mechanisms you're likely to go way off track and not have the consciousness to come back on track.
+
+24:00-Ruha Devanesan
+
+But, that “stop and reflect” value, I think, is really important. And it's really important to inclusion because just reflection on how we're working together, how can we course correct, is one of the fundamental ways in which teams can be inclusive.
+
+Saron Yitbarek
+
+Since we're talking about inclusivity, now might be a good time to point out that those 17 founders of the agile manifesto, yeah ... They were all white men.
+
+24:30-Dave Thomas
+
+There was zero diversity in that room. And that is a very common criticism of the group. And one that I have a lot of sympathy with.
+
+Saron Yitbarek
+
+If the manifesto founders used those agile principles, and applied it to their own meeting, they may have gotten part-way done and asked themselves ... “Hey, did you notice we didn't invite any women to this meeting?” I wonder if a person of color would have a different opinion.
+
+25:00-Ruha Devanesan
+
+People’s friends tend to be and look like they do. So, if the first person that thought about the agile manifesto was a white guy, it's not surprising that the people he invited to the table were also white guys. But, we have an opportunity to do better there, and we have an opportunity to stop and say, "Let’s take a step back, let’s expand our lens and look for people outside of the network that I currently have, who can bring a different perspective and help me elevate this methodology to something even better."
+
+25:30-Saron Yitbarek
+
+It makes sense to me that because agile is so ... well, agile, we can apply it to different problems and industries. The application of agile, and what it looks like in real life, is constantly shifting, expanding. I guess it's practicing what it preaches. There is no subtler answer, no subtler end point. That's something we sometimes forget: Hard rules are the enemy of agility.
+
+26:00-Saron Yitbarek
+
+So, if an agile team ever tells you that part of being agile means you have to produce a new release every two weeks, or you have to do that, then, by definition, that's not agile. The second you say “always,” you aren't being agile anymore.
+
+26:30-Saron Yitbarek
+
+Those 17 men who met in Snowbird, Utah, eventually dubbed themselves the Agile Alliance. That alliance became a nonprofit, and that nonprofit started hosting a conference every year. It's grown, and grown, spawning whole new theories and methodologies.
+
+And here's something I think is super interesting. At the 2008 conference, Belgium developer Patrick Debois attends and sets off down a path that leads him to inventing a whole new practice of software development, DevOps. I'd never thought that agile, a set of principles, and DevOps, a whole industry, were related.
+
+27:00-Saron Yitbarek
+
+But, now I'm thinking, “How strong really is that line between the rise of agile and the invention of DevOps? Did the one breakthrough lead to the other organically?” We're going to find out together, because our next episode is all DevOps, all episode long.
+
+27:30-Saron Yitbarek
+
+Command Line Heroes is an original podcast from Red Hat. For more information about this and past episodes, go to Redhat.com/commandlineheroes. Once you're there, you can also sign up for our newsletter. And to get new episodes delivered automatically, for free, make sure to subscribe to the show. Just search for “Command Line Heroes” in Apple podcasts, Spotify, Google Play or however you get your podcasts.
+
+Then, hit “subscribe” so you'll be the first to know when new episodes are available. I'm Saron Yitbarek, thanks for listening, and keep on coding.
