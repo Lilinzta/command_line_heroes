@@ -1,2 +1,2 @@
-# command_line_heroes
-Unofficial Chinese translation of Red Hat command line heroes podcast series
+# 命令行英雄
+红帽命令行英雄系列播客非官方中文翻译
