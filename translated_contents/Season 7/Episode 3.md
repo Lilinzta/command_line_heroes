@@ -6,236 +6,236 @@ Dr. Belinda Barnet 解释了最初需要怎样的框架来构建和导航网络�
 
 ## 00:04-Saron Yitbarek
 
-In Medieval Europe, scholars had to converse in... Latin. For centuries the British monarchs spoke... French. And today the business language of India is... English. Official languages have the power to unify people, but they don't always reflect everybody's lived experience. And when we look at not just a country, but a world wide web, that struggle to impose a standard language can grow to epic proportions. This season, we've been exploring a pivotal year in the history of tech—1995.
+在中世纪的欧洲，学者们必须用……拉丁语交流。几个世纪以来，英国的君主讲的是……法语。而今天，印度的商业语言是……英语。官方语言具有团结人们的力量，但它们并不总能反映每个人的生活经历。当我们不只看一个国家，而是看整个万维网时，试图强加一种标准语言的挑战可能会变得极其庞大。本季节目中，我们一直在探索技术史上一个关键的年份——1995年。
 
-### 00:51-Saron Yitbarek
+## 00:51-Saron Yitbarek
 
-We already heard how it launched the dot-com bubble, and how it led to the privatization of the internet. But 1995 was also the year when HTML, the language of the web, was standardized. HTML's rapid evolution was crucial to the web's development and growth, but some basic assumptions about who a coder is and whose language mattered were locked into place at the same time. And once we began digging into HTML's past, we realized: a language can become a standard, but it can never be neutral. I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red Hat.
+我们已经听说过1995年是如何引发互联网泡沫，以及如何导致互联网的私有化。但1995年也是 HTML，这一网络语言被标准化的一年。HTML 的快速演变对网络的发展和成长至关重要，但同时，一些关于开发者身份及语言重要性的基本假设也被固定了下来。当我们深入挖掘 HTML 的历史时，我们意识到：一种语言可以成为标准，但它永远无法保持中立。我是 Saron Yitbarek，这里是 Command Line Heroes，Red Hat 出品的原创播客。
 
-### 01:40-Saron Yitbarek
+## 01:40-Saron Yitbarek
 
-Today, hypertext markup language, HTML, is the mother tongue of the web. The standard markup language for pretty much everything you see in a browser, but right there in its name is a much older concept that predates HTML and that's the idea of hypertext. Back in 1945, the engineer Vannevar Bush wrote an article for Life magazine, where he imagined a futuristic machine. This machine would allow you to display information on a screen, and that information could be retrieved from a microfiche storage device that sat under the desk. Bush was thinking this up decades before anything like the world wide web, but what he proposed was the start of something big. Belinda Barnet, Senior Lecturer in Media and Communications at Swinburne University of Technology explains.
+今天，超文本标记语言（HTML）是网络的“母语”。几乎所有你在浏览器中看到的内容都基于这一标准标记语言。但它的名字中包含了一个比 HTML 更古老的概念，那就是超文本的思想。早在1945年，工程师 Vannevar Bush 为《生活》杂志撰写了一篇文章，想象了一种未来主义机器。这种机器可以在屏幕上显示信息，而这些信息可以从放置在桌子下方的微缩胶片存储设备中提取。Bush 的设想早于万维网的诞生几十年，但他提出的想法是一个伟大事物的开端。Belinda Barnet，斯威本科技大学媒体与传播高级讲师，解释了这一点。
 
-### 02:38-Belinda Barnet
+## 02:38-Belinda Barnet
 
-What was most interesting is that you could create links between pieces of information from different articles in order to create what he called a trail through information. And so this was really the first instance of a technical device that would create hyperlinks.
+最有趣的是，你可以在不同文章的信息之间创建链接，以形成他所谓的信息“路径”。这是第一个技术设备能够创建超链接的实例。
 
-### 03:01-Saron Yitbarek
+## 03:01-Saron Yitbarek
 
-For years, Bush worked as the Head of the U.S. Office of Scientific Research and Development. So even when he was delving into a bit of fantasy, he was still being influenced by academic practices—that classic rule of academia, where one person's work is constantly linked to other authorities. Bush imagined a machine that would make those links come to life, a machine that would work like an academic's mind, connecting to every other mind it had ever encountered. He called this imaginary machine, the “Memex”—combining together the words, memory and extender and that's what it was: an extension of human memory, an extension of human thought.
+多年来，Bush 担任美国科学研究与发展办公室主任。因此，即使他在幻想中进行探索，他仍然受到了学术实践的影响——那种典型的学术规则：一个人的工作总是与其他权威的工作相联系。Bush 想象了一种能让这些链接变得生动的机器，一种像学者的思维一样运作的机器，可以与它曾接触过的每一个思想相连。他将这台假想机器命名为“Memex”，结合了“记忆”和“扩展”两个词。这正是它的作用：人类记忆的延伸，人类思维的扩展。
 
-### 03:46-Saron Yitbarek
+## 03:46-Saron Yitbarek
 
-Bush's Memex inspired generations of computer scientists to pursue that Holy Grail of preserved and interlinked knowledge. But yeah, he still lived in the 1940s. He'd have to wait another decade until the Memex started coming to life. In the 1950s, Douglas Engelbart, who we've talked about on this podcast before was inspired to build a system of links, a living network of linked information.
+Bush 的 Memex 激励了几代计算机科学家追求保存和互联知识的圣杯。但他仍然生活在20世纪40年代。他必须再等上十年，直到 Memex 开始变为现实。20世纪50年代，Douglas Engelbart（我们之前在这个播客中讨论过他）受到启发，开始构建一个链接系统，一个活生生的信息链接网络。
 
-### 04:16-Belinda Barnet
+## 04:16-Belinda Barnet
 
-And he brought together this idea of using a computer screen to display knowledge and information and link it together in the manner of the Vannevar Bush's trails and create a system, which he eventually got funding for at the Stanford Research Institute, that was the first hypertext system.
+他结合了利用计算机屏幕展示知识和信息的想法，以及 Vannevar Bush 的路径理念，创建了一个系统。他最终在斯坦福研究院获得了资金支持，这是第一个超文本系统。
 
-### 04:40-Saron Yitbarek
+## 04:40-Saron Yitbarek
 
-Of course, he didn't call it hypertext yet. The word itself was coined a decade later in the 1960s by philosopher Ted Nelson. Though, as Barnet tells it, Nelson's version differed from Engelbart's in important ways.
+当然，当时他还没有称之为超文本。这一术语本身是在十年后，也就是20世纪60年代，由哲学家 Ted Nelson 创造的。不过正如 Barnet 所说，Nelson 的版本与 Engelbart 的在重要方面存在不同。
 
-### 04:58-Belinda Barnet
+## 04:58-Belinda Barnet
 
-Ted wanted something far more freeform, more like, as he put it thought itself, which kind of meanders between things and there's no restrictions to what you can connect to or at what level you can connect it. He had also imagined that hyperlinks would not be one-way, but that they would be two-way. But this basic concept of connecting together different pieces of information associatively and forming trails through the information was certainly evident in Ted's thinking in the 60s.
+Ted 想要的是一种更加自由的形式，更像他所描述的“思想本身”，它在事物之间漫游，没有任何限制，任何层级都可以进行连接。他还设想超链接不仅仅是单向的，而是双向的。但将不同的信息片段通过联想连接起来，并形成信息路径的基本概念，在60年代的 Ted 思想中显然已经显现出来。
 
-### 05:46-Saron Yitbarek
+## 05:46-Saron Yitbarek
 
-That distinction between one-way links and two-way links has pretty profound consequences. A web composed of two-way links would arguably create an entirely different online experience and at that point in history, there was no obvious form that hypertext had to take. Our linked future was still being imagined. Douglas Engelbart's hypertext system, which was called the online system, was not especially user-friendly. Only the truly technical were able to use it. And for years, most early hypertext attempts had the same roadblock, but then along came a computer scientist named Tim Berners-Lee. While working as a contractor for CERN in 1980, he created a document-sharing program called Enquire. And 9 years after that, he wrote a memo laying out a plan to use hypertext to take his work onto the global stage. The result? A Hypertext Markup Language was unlike any hypertext system that had yet been developed.
+单向链接与双向链接之间的区别具有深远的影响。一个由双向链接组成的网络可能会创造一种完全不同的在线体验。在那个历史节点上，超文本并没有固定的形式。我们的链接未来仍在被想象之中。Douglas Engelbart 的超文本系统，名为 Online System，并不是特别用户友好，只有真正技术娴熟的人才能使用它。而且多年来，大多数早期超文本尝试都面临同样的障碍。但随后，一位名叫 Tim Berners-Lee 的计算机科学家出现了。1980年，他在 CERN 担任合同工时，创建了一个名为 Enquire 的文档共享程序。9年后，他写了一份备忘录，提出了一个利用超文本将他的工作推向全球舞台的计划。结果呢？他开发的超文本标记语言与之前的任何超文本系统都不同。
 
-### 06:55-Tim Berners-Lee
+## 06:55-Tim Berners-Lee
 
-Designing HTML was really, really easy because I was the only one doing it.
+设计 HTML 非常非常简单，因为当时只有我一个人在做。
 
-### 07:00-Saron Yitbarek
+## 07:00-Saron Yitbarek
 
-Berners-Lee had delivered something deceptively simple, something democratic, something that took hypertext across all borders.
+Berners-Lee 提供了一种看似简单、具有民主特性的东西，让超文本跨越了所有的边界。
 
-### 07:11-Belinda Barnet
+## 07:11-Belinda Barnet
 
-What Berners-Lee did is to realize that the real power of the link is to link not just between documents on your own computer, but to link between countries and to all kinds of different places outside of your own machine and your own unique operating environment.
+Berners-Lee 的贡献在于认识到，链接的真正力量不只是连接你自己电脑上的文档，而是连接不同国家、以及所有超越你自己机器和独特操作环境的地方。
 
-### 07:35-Saron Yitbarek
+## 07:35-Saron Yitbarek
 
-That vision of a system to link computers and share files across huge distances brought us closer than ever to Vannevar Bush's idea of a Memex. What had begun as a bit of abstract philosophy had suddenly transformed into a reality. We asked Jeff Veen who was part of the founding web team at Wired magazine to talk us through the 3 ingredients that made HTML an ideal language for the web. Today, Veen is a partner at VC Fund True Ventures. First, there was the format's utter simplicity.
+这种连接计算机并跨越巨大距离共享文件的系统愿景，比以往任何时候都更接近 Vannevar Bush 的 Memex 想法。一个始于抽象哲学的概念突然变成了现实。我们邀请了 Jeff Veen，他曾是《Wired》杂志创始网络团队的一员，来向我们讲解 HTML 成为理想网络语言的三大要素。如今，Veen 是风险投资基金 True Ventures 的合伙人。第一个要素是这种格式的极度简单。
 
-### 08:13-Jeff Veen
+## 08:13-Jeff Veen
 
-So you would essentially do a lowest common denominator for all kinds of documents because back then every word processor had proprietary format. We didn't all just use Word docs. There was Word Perfect and, you know, there were so many other types of files that it was impossible to share files with each other. So he made it a very, very simple file format.
+所以你基本上就是为各种文档创建一个最低公分母格式，因为在那时，每种文字处理器都有自己的专有格式。我们并不是都用 Word 文档。还有 Word Perfect，甚至还有很多其他类型的文件，因此共享文件几乎是不可能的。所以他把文件格式设计得非常非常简单。
 
-### 08:33-Saron Yitbarek
+## 08:33-Saron Yitbarek
 
-Next ingredient, a way to transport those simple files over the web.
+第二个要素是让这些简单文件能够通过网络传输的方式。
 
-### 08:38-Jeff Veen
+## 08:38-Jeff Veen
 
-So you still see that when you type in a web address or something, and you see that HTTP, that hypertext transport protocol. And that was again, very, very simple, but easy enough that anybody could quickly make a browser and make a web server and so it caught on really quickly as being very simple.
+你现在仍然可以看到这一点，当你在浏览器输入网址时，会看到 HTTP，这个超文本传输协议。它非常简单，但足够容易让任何人快速制作浏览器和 Web 服务器，因此它迅速流行起来。
 
-### 08:55-Saron Yitbarek
+## 08:55-Saron Yitbarek
 
-And the third and final ingredient, Berners-Lee created URLs.
+第三个，也是最后一个要素，Berners-Lee 创建了 URL。
 
-### 09:00-Jeff Veen
+## 09:00-Jeff Veen
 
-Uniform resource locators, right? And that was a standard address so you could find things. Because again, back then there were all kinds of different systems. There was FTP for file transferring, Gopher was a rudimentary information system and you could Telnet to other servers, like, there are all of these different protocols and places where servers would be.
+Uniform Resource Locators，没错？它是一个标准地址，可以用来找到东西。当时有各种不同的系统，比如用于文件传输的 FTP，Gopher 是一个初级的信息系统，还有 Telnet 可以连接到其他服务器，各种协议和服务器所在的地方都不一样。
 
-### 09:22-Saron Yitbarek
+## 09:22-Saron Yitbarek
 
-With those 3 ingredients, a simple file format, simple transport protocol, and URLs, Tim Berners-Lee had created a framework so easy, so infinitely adaptable, it seemed to appeal to everybody that was racing onto the world wide web. He had taken the established idea of hypertext and made it global for the first time, allowing us to not just link between our own set of documents, but to the world's. And yet the simplicity that surrounded HTML would turn out to be a double-edged sword.
+通过这三大要素：简单的文件格式、简单的传输协议和 URLs，Tim Berners-Lee 创建了一个如此简单、无限适应的框架，以至于吸引了所有正在奔向 World Wide Web 的人。他把超文本这个既定的概念第一次推向了全球，让我们不仅可以在自己的文档中创建链接，还能链接到全世界。然而，HTML 的这种简单性后来被证明是一把双刃剑。
 
-### 10:04-Jeff Veen
+## 10:04-Jeff Veen
 
-The problem or benefit depending on your frame of reference is that it was so simple that it didn't remotely capture all the things that everybody was used to doing on their computers.
+问题或好处，取决于你的视角在于，它太简单了，以至于完全没有包含人们在电脑上习惯的所有功能。
 
-### 10:17-Saron Yitbarek
+## 10:17-Saron Yitbarek
 
-If you wanted to build elaborate tables, if you wanted to create elegant layouts, if you wanted the advanced features that previous hypertext systems had offered, you weren't going to find any of that with your basic HTML.
+如果你想构建复杂的表格，想创建优雅的布局，或者使用之前超文本系统提供的高级功能，这些在基础 HTML 中是找不到的。
 
-### 10:30-Jeff Veen
+## 10:30-Jeff Veen
 
-It didn't have any of it. So many people I think discounted like, oh, this stuff is way too simple. It'll never catch on.
+它根本不具备这些功能。所以很多人会觉得：“哦，这东西太简单了，永远也流行不起来。”
 
-### 10:36-Saron Yitbarek
+## 10:36-Saron Yitbarek
 
-Except those people were wrong. In fact, it was exactly the paired down simplicity that made HTML incredibly popular. In the mid-90s it didn't even have 20 tags, 20 things you could do. A few headers, some citations and block quotes it was pretty bare bones, but that meant the barrier to entry was super low. You could easily learn HTML in an afternoon and everybody did. That's why a tech thriller movie likeThe Netmade sense in 1995.
+但那些人错了。事实上，正是这种简化后的简单性让 HTML 变得非常受欢迎。90年代中期，它甚至没有 20 个标签。几个标题标签、一些引用和块引用，基本上就是这些，但这也意味着入门门槛极低。你可以在一个下午就学会 HTML，而每个人确实都这么做了。这也是为什么像 The Net 这样的科技惊悚电影在1995年会显得合理。
 
-### 11:12-Saron Yitbarek
+## 11:12-Saron Yitbarek
 
-Hacking into the internet guts felt like something that, sure, Sandra Bullock could probably pull off. Another obstacle that turned out to be a mirage was the question of broken links. In the past, people had fussed about the fact that moving a document meant you have to alert everyone who linked to it, get them to update their link or else the connection will be broken. Maintaining all those links seemed incredibly onerous, but Berners-Lee decided not to worry about the broken link problem at all. He gamed it out: a few broken links were the cost of simplicity and easy connections.
+黑入互联网的核心听起来像是 Sandra Bullock 也能做到的事。而另一个曾被认为是阻碍的问题“链接失效”，后来证明是个假象。在过去，人们担心移动文档时必须通知所有链接到它的人，让他们更新链接，否则连接会失效。维护所有这些链接看起来十分麻烦，但 Berners-Lee 根本没有在意这个问题。他经过思考后得出的结论是：少量的链接失效是换取简单性和便捷连接的代价。
 
-### 11:51-Jeff Veen
+## 11:51-Jeff Veen
 
-Look, I'll just make my stuff, and you make your stuff, and we'll link them together and if they move, it breaks, or, you know... and things like that helped with the popularity at the growth of the web.
+就是这样：“我做我的东西，你做你的东西，我们把它们链接在一起。如果它们移动了，链接失效了，那就这样吧。”类似这样的态度促进了网络的普及和发展。
 
-### 12:01-Saron Yitbarek
+## 12:01-Saron Yitbarek
 
-As the web grew, fueled by the rapid adoption of HTML, that pioneering attitude—if it breaks, it breaks—was going to spread. Soon, people were sprucing HTML up adding their own tags without asking anybody's permission. And everybody had their own idea of how it should evolve. A young Marc Andreessen was a classic example. He was working on the Netscape browser and decided to give it an image tag. The authorities back at CERN thought they'd instigate a thoughtful back and forth to determine how an image tag might work. Were we talking about embedded objects of any kind? Maybe just icons? But Andreessen wrote back to inform those so-called authorities: "Yeah. I already made the image tag. You guys can make your own if you want." And things just got more tangled from there.
+随着网络的成长，由 HTML 的快速普及推动，这种先锋精神——“坏了就坏了”——开始传播。很快，人们开始美化 HTML，添加自己的标签，而不需要获得任何人的许可。每个人对 HTML 的发展都有自己的看法。Marc Andreessen 就是一个典型的例子。他当时正在开发 Netscape 浏览器，决定给它添加一个 image 标签。CERN 的权威人士原以为可以通过深思熟虑的讨论来确定 image 标签的具体实现方式。比如讨论是否需要支持任何类型的嵌入对象，或者仅仅是图标？但 Andreessen 回信告诉这些所谓的权威人士：“是的，我已经做了 image 标签了。如果你们愿意，可以自己做一个。”从那之后，情况变得更加混乱。
 
-### 12:54-Jeff Veen
+## 12:54-Jeff Veen
 
-It was sort of the “wild west” for a number of years, especially as Silicon Valley sort-of woke up to, like okay, this web thing is huge, and there is the potential for very big businesses to be created here.
+那几年网络有点像“狂野西部”，特别是当 Silicon Valley 意识到：“好吧，这个 web 很巨大，而且有潜力创造非常大的商业机会。”
 
-### 13:08-Saron Yitbarek
+## 13:08-Saron Yitbarek
 
-If you're a long-time listener of this podcast, you've probably heard me talk about the browser wars. Starting in the late 1990s web browsers, like Microsoft's Internet Explorer and Netscape's Navigator, and a whole bunch of others began competing for dominance. They all wanted to be the world's portal to the world wide web. To distinguish themselves, everybody was doing what Marc Andreessen had done with this image tag. They were just creating their own thing, modifying HTML however they wanted. The language and the experience of coding for the web was beginning to branch.
+如果你是这档播客的长期听众，你可能听我讲过“浏览器大战”。从90年代末开始，网络浏览器，比如微软的 Internet Explorer 和 Netscape 的 Navigator，还有其他一大批浏览器，开始为争夺主导地位展开竞争。他们都想成为通往 World Wide Web 的全球门户。为了与众不同，每个人都在做 Marc Andreessen 用 image 标签做的事。他们随心所欲地创建自己的东西，随意修改 HTML。这让 HTML 和编写网页代码的体验开始出现分裂。
 
-### 13:46-Jeff Veen
+## 13:46-Jeff Veen
 
-I would say that standardization was a necessity.
+我认为标准化是必要的。
 
-### 13:49-Saron Yitbarek
+## 13:49-Saron Yitbarek
 
-Gavin Nicol is a technology evangelist and CTO at Context Labs. He was in the field at the time and remembers Tim Berners-Lee's first proposals for the world wide web. He pointed out that it wasn't so much all those new tags that created a problem. It was the fact that nobody was making the tags cohesive.
+Gavin Nicol 是 Context Labs 的技术推广者和 CTO。他曾亲历其境，记得 Tim Berners-Lee 最初提出 World Wide Web 的提议。他指出，问题不在于这些新增的标签，而在于没人让这些标签保持一致。
 
-### 14:11-Gavin Nicol
+## 14:11-Gavin Nicol
 
-Okay. Hey, anybody can create a tag, but the question becomes, if you have a tag, how do you display it? And how do you hook up an event handler to that tag? So to a certain degree, even though, there were some issues about, okay, well, who gets to define the common set of tags in the big scheme of things? That was probably less interesting than trying to decide how to interpret those tags.
+OK，任何人都可以创建一个标签，但问题是，如果你有一个标签，如何显示它？如何将事件处理器与这个标签挂钩？所以，从某种程度上来说，虽然确实存在一些问题，比如“谁来定义通用的标签集合”，但在大局上，这个问题可能没有“如何解释这些标签”那么有趣。
 
-### 14:34-Saron Yitbarek
+## 14:34-Saron Yitbarek
 
-All those different browser companies rushing to capitalize on the brand new web, were throwing any kind of tag they wanted into the mix, but they weren't adhering to any kind of standard. If the web kept going down that road, it would soon become so disjointed there'd be siloed experiences in each proprietary browser. In the same way that engineering task forces created SMTP to standardize email or FTP to standardized file transfers, there needed to be a standard for how HTML would work.
+那些争先恐后抓住新兴网络机会的浏览器公司，随意向 HTML 中添加各种标签，却没有遵循任何标准。如果网络继续沿着这条路走下去，很快就会变得支离破碎，在每个专属浏览器中都有孤立的体验。正如工程领域创建了 SMTP 来标准化电子邮件、FTP 来标准化文件传输一样，HTML 的运行方式也需要一个标准。
 
-### 15:07-Gavin Nicol
+## 15:07-Gavin Nicol
 
-It was absolutely crucial to the adoption of HTML. It would have happened with or without the W3C, but it was crucial.
+这对 HTML 的推广至关重要。即使没有 W3C，它也会发生，但标准化的确关键。
 
-### 15:14-Saron Yitbarek
+## 15:14-Saron Yitbarek
 
-The W3C that Nicol just mentioned is the World Wide Web Consortium founded in 1994. The consortium took it upon themselves to bring a little order to the growing chaos of the browser wars. The W3C will provide guidance and standardization for HTML so that whatever tags anybody might create, they would all be interoperable across any browser. This was the task, standardization, that would allow the web's potential to be fully realized. Standardization would allow a truly global web experience.
+Nicol 刚提到的 W3C 指的是 1994 年成立的 World Wide Web Consortium。这个联盟承担起了在浏览器大战的混乱中带来秩序的任务。W3C 为 HTML 提供指导和标准化，这样无论任何人创建了什么标签，这些标签都可以在任何浏览器中互操作。这是一个任务，标准化，让网络的潜力得以充分实现。标准化使真正全球化的网络体验成为可能。
 
-### 15:51-Gavin Nicol
+## 15:51-Gavin Nicol
 
-To be honest, the W3C was a great convening body and a great, kind-of-like, independent third party to get everybody who had strong commercial interest to sit down and talk about interoperability.
+说实话，W3C 是一个很棒的召集机构，也是一个很好的独立第三方，它让所有有强大商业利益的人坐下来讨论互操作性。
 
-### 16:04-Saron Yitbarek
+## 16:04-Saron Yitbarek
 
-So in 1995, HTML was elevated from a bare set of tags to HTML 2.0. In its new life, HTML became aligned with SGML, the standard generalized markup language, and standardization was brought to its processing model, to its data representation, and to the handling of characters and coding.
+于是，1995 年，HTML 从一组简单的标签升级为 HTML 2.0。在它的新阶段，HTML 开始与 SGML（Standard Generalized Markup Language，标准通用标记语言）对齐，并对其处理模型、数据表示以及字符和编码的处理进行了标准化。
 
-### 16:27-Gavin Nicol
+## 16:27-Gavin Nicol
 
-So was the first rigorous standard and that was key for interoperability.
+这是第一个严格的标准，而这对互操作性至关重要。
 
-### 16:35-Saron Yitbarek
+## 16:35-Saron Yitbarek
 
-HTML 2.0, the first standardized version, was released in 1995. Problem solved, right? Everyone in the global internet community could look forward to a happy interoperable future. Not quite. Think for a moment about the global tech reality that people lived with in 1995. Things may have been nicely ordered from the perspective of Silicon Valley, or from the perspective of big shots at the World Wide Web Consortium, but that's not the whole world. It was far from including everybody.
+HTML 2.0，作为第一个标准化版本，于 1995 年发布。问题解决了，对吧？全球互联网社区的每个人都可以期待一个愉快的、互操作的未来。不完全是。想一想 1995 年人们所处的全球技术现实。从硅谷的视角，或从 World Wide Web Consortium（万维网联盟）大人物的视角来看，一切可能显得井然有序，但这并不代表整个世界。它远未包括所有人。
 
-### 17:13-Saron Yitbarek
+## 17:13-Saron Yitbarek
 
-At that point, much of Asia and Sub-Saharan Africa were still offline. The idea of a global village was introduced by Marshall McLuhan in the 1960s, but decades later, much of the world remained disconnected. And that meant they didn't have a seat at the table. They weren't part of any standardization process. The new standardized HTML was a gateway to web development, but a gateway created by English speakers with all their biases along for the ride. The only way to read HTML was from left-to-right and the only way to write it was in English. A standardization may have been inevitable, but it also created exclusions. It ran the risk of turning non-English speakers into second class citizens of the web. And that was not inevitable, that was something people could fight to fix.
+当时，亚洲的大部分地区和撒哈拉以南非洲仍未联网。“全球村”的概念早在 20 世纪 60 年代由 Marshall McLuhan 提出，但几十年后，世界上仍有很大一部分人处于断网状态。这意味着他们没有发言权，也没有参与任何标准化进程。新的标准化 HTML 确实成为了通向网页开发的大门，但这扇大门是由讲英语的人创建的，其中包含了他们的各种偏见。阅读 HTML 的唯一方式是从左到右，而书写它的唯一方式是用英语。标准化或许不可避免，但它也带来了排他性风险，有可能将非英语使用者变成网络的二等公民。而这并不是不可避免的，是可以通过努力去改变的。
 
-### 18:15-Gretchen McCulloch
+## 18:15-Gretchen McCulloch
 
-One of the big things that having programming languages be based on English does—is it creates this barrier for access to the field of coding.
+以英语为基础的编程语言带来的一个主要问题是，它为进入编程领域设置了一道障碍。
 
-### 18:27-Saron Yitbarek
+## 18:27-Saron Yitbarek
 
-Gretchen McCulloch is an internet linguist and the author ofBecause Internet: Understanding the New Rules of Language.We asked her to walk us through some of the ways English programming languages and markup languages give one part of the population an advantage. And it goes way beyond being able to read commands.
+Gretchen McCulloch 是一位网络语言学家，也是《Because Internet: Understanding the New Rules of Language》的作者。我们请她介绍了一些英语编程语言和标记语言如何为一部分人群提供优势的方式。而这种优势远不止能读懂指令那么简单。
 
-### 18:48-Gretchen McCulloch
+## 18:48-Gretchen McCulloch
 
-If you can't read what people have put on Stack Exchange (an online community for developers), or it takes you twice as long to read because you don't speak the language, then that's also a significant barrier to using a programming language. It's not just the technical words used in the code, it's also reading the help documentation, reading the Q&As, reading all of the meta information about how to use that code, the libraries, all of this additional stuff, that all exists in English.
+如果你看不懂人们在 Stack Exchange（一个面向开发者的在线社区）上发布的内容，或者因为你不说这种语言而需要花两倍时间来阅读，这就构成了一个显著的障碍。这不仅仅是代码中使用的技术词汇问题，还包括阅读帮助文档、问答内容，以及所有关于如何使用代码、库的附加信息，而这些内容几乎全都以英语存在。
 
-### 19:15-Saron Yitbarek
+## 19:15-Saron Yitbarek
 
-After 1995, a non-English coder working on the web would have been guaranteed to run into those barriers everywhere, standardization guaranteed it. Those of us in the English-speaking world often forget about these hurdles. We think we're on an even playing field coding alongside our peers in China or India or Germany. But if you're a coder and your first language is English, just ask yourself, what would your career look like if the code you were writing and all the supporting documents and communities you rely on, if all of that were in Chinese or Swahili, would your career be the same? Would your ambitions? Gavin Nicol was inspired to make HTML work for everybody. In the 1990s, he was living in Japan and he noticed firsthand how difficult it was for non-English speakers to code for the web.
+1995 年后，从事网页开发的非英语编码者会不可避免地在各处遇到这些障碍，而标准化则确保了这些障碍的存在。我们这些生活在英语世界的人常常忘记这些难关。我们以为自己在与中国、印度或德国的同行平等竞争。但如果你是一名编码者，以英语为母语，请问自己一个问题：如果你写的代码，以及所有支持文档和你依赖的社区，都是用中文或斯瓦希里语呈现的，你的职业生涯会是现在这样吗？你的志向会一样吗？Gavin Nicol 致力于让 HTML 为所有人所用。在 1990 年代，他居住在日本，亲身感受到非英语使用者在编写网页代码时的种种困难。
 
-### 20:11-Gavin Nicol
+## 20:11-Gavin Nicol
 
-It was a mess to be frank.
+老实说，那时简直一团糟。
 
-### 20:13-Saron Yitbarek
+## 20:13-Saron Yitbarek
 
-Nicol was the one who looked at HTML, which at the time had no real character-processing model, and decided to find a way to let everybody use it. His solution was to use Unicode, a standard that handles text in almost all the world's languages. By adopting Unicode, as his character set, he managed to establish a formal model for the internationalization of HTML.
+Nicol 是那个看着 HTML——当时它没有真正的字符处理模型——并决定找到一种方法让每个人都能使用它的人。他的解决方案是采用 Unicode，这是一种处理几乎所有语言文字的标准。通过将 Unicode 作为字符集，他成功为 HTML 的国际化建立了一个正式模型。
 
-### 20:39-Gavin Nicol
+## 20:39-Gavin Nicol
 
-Partially it was practical, but also there was a mission aspect to it as well. You know, the practicality came from the fact that I was working at NIC while living in Japan. I was like, "Hey, listen, you know, I would love to be part of this global conversation." But then also I still believe there's an under-representation of non-Latin voices in the global commentary. So I really wanted to accelerate the pace of that.
+部分原因是实际需求，但也有一种使命感。实际上是因为当时我在 NIC 工作，同时生活在日本。我觉得：“嘿，听着，我很想参与这场全球对话。”但同时我也始终认为，全球讨论中非拉丁语系的声音被低估了。所以我真的想加速这一进程。
 
-### 21:05-Saron Yitbarek
+## 21:05-Saron Yitbarek
 
-Despite the great work that the W3C folks had done in 1995, it was up to people like Nicol to take the HTML standard and open it up to all the world's languages.
+尽管 W3C 团队在 1995 年做出了巨大努力，但像 Nicol 这样的人才真正让 HTML 标准对全世界的语言开放。
 
-### 21:17-Gavin Nicol
+## 21:17-Gavin Nicol
 
-And it became kind-of a mission for me to make that easy for non-native speakers, because I firmly believe that if you force everyone to speak in English, you force everyone to sort-of think in English and that's a very sad thing, because you end up losing the culture that is associated with the language.
+这也成为了我的一种使命：让非母语使用者能够更轻松地使用，因为我深信，如果你强迫所有人都用英语表达，你实际上是在强迫所有人用英语的方式思考。这是件非常可悲的事情，因为这样做会让与语言相关的文化消失。
 
-### 21:36-Saron Yitbarek
+## 21:36-Saron Yitbarek
 
-Nicol believes people must be allowed to communicate and work in their own language. To make the web an English-only zone would mean cutting off part of our shared humanity.
+Nicol 认为，人们必须被允许用自己的语言交流和工作。将网络变成一个仅限英语的空间，就意味着切断了我们人类共有的一部分。
 
-### 21:47-Gavin Nicol
+## 21:47-Gavin Nicol
 
-There's a thing called Conway's law, and it's, kind-of-like, systems tend to evolve to represent the organizational structures that created them.
+有一种叫 Conway 定律的理论，大致意思是，系统往往会演化成反映创建它的组织结构的样子。
 
-### 21:57-Saron Yitbarek
+## 21:57-Saron Yitbarek
 
-To me Conway's law is a kind-of warning. Make sure the organizational structures represent all of us or else don't be surprised when the systems that evolve lock some people out. 1995 was a quarter-century ago and HTML has evolved to HTML5 today, but the work is far from finished. Look around at the coding landscape and English is still taking up a lot of the oxygen. Sometimes it can feel like a forgone conclusion. Pascal for example, was created by a Swedish [correction: Swiss] computer scientist who made it in English to appeal to the rest of the world. Python, same thing, written in English by a creator in the Netherlands and Ruby uses English too, even though it was made in Japan. Here's Gretchen McCulloch again.
+对我来说，Conway 定律像是一种警示：确保组织结构能够代表所有人，否则当发展出的系统将某些人排除在外时，也不要感到惊讶。1995 年已经是四分之一个世纪以前的事情了，HTML 已经从最初发展到今天的 HTML5，但这项工作远未结束。放眼当下的编程领域，英语仍然占据着大量空间。有时这种现象会让人觉得像是一个早已注定的结果。例如，Pascal 是由一位瑞士计算机科学家创造的，他用英语设计这门语言以吸引全球用户。Python 也是如此，由一位荷兰开发者用英语编写，而 Ruby 即使是在日本开发的，使用的依然是英语。以下是 Gretchen McCulloch 的观点。
 
-### 22:55-Gretchen McCulloch
+## 22:55-Gretchen McCulloch
 
-So if you're a non-native English speaker and you're thinking, oh, I want my programming language to be adopted by the most number of people. You might say, well, I know that people are used to coding in English-based things. I know that I've gotten used to coding in English-based programming languages, so I'm also going to create my programming language that has English-based keywords, because that's what people are used to.
+如果你是一个非英语母语者，并且你在想，“哦，我希望我的编程语言能被最多人采用。”你可能会说，“嗯，我知道大家习惯用基于英语的东西编程。我自己也习惯使用基于英语的编程语言，所以我也会创建一门带有英语关键词的编程语言，因为这是大家习惯的。”
 
-### 23:15-Saron Yitbarek
+## 23:15-Saron Yitbarek
 
-It's a feedback loop and not a great one.
+这是一个反馈循环，但并不是一个良性的循环。
 
-### 23:18-Gretchen McCulloch
+## 23:18-Gretchen McCulloch
 
-One of the things that I think we could do as a short-term way of calling attention to the problem is when we talk about programming languages, where the keywords are based on English, we could call them that. The first website wasn't written in HTML, it was written in English HTML, which opens up the possibility of what would Spanish HTML look like? What would Russian HTML look like?
+我认为，我们可以在短期内通过一种方式来引起人们对这个问题的关注。当我们讨论编程语言时，如果关键词是基于英语的，我们可以明确地这样称呼它。首个网站并不是用 HTML 写的，而是用英语 HTML 写的。这就打开了一个可能性：西班牙语 HTML 会是什么样的？俄语 HTML 又会是什么样的？
 
-### 23:44-Saron Yitbarek
+## 23:44-Saron Yitbarek
 
-What does your HTML look like? How will you get to program on the web, and how will you make sure everyone else can do the same? I mentioned at the top of this episode that, in Medieval Europe, reading and writing was working in Latin, even if you didn't speak Latin every day. Only Latin was allowed as a tool for accessing the technology of writing, the technology of the printing press. Today, we look back on that and it makes little sense, but how different are we really? Isn't it just as ridiculous to expect everyone to code in English? And by the way, all you English speaking coders out there one day the shoe could be on the other foot.
+你的 HTML 会是什么样的？你将如何在网络上编程，又将如何确保每个人都能做到这一点？我在本期节目开头提到，中世纪欧洲的阅读和书写是用拉丁语完成的，即使你每天并不说拉丁语。拉丁语是唯一被允许用来接触写作技术和印刷术的工具。今天回顾这一点，我们会觉得毫无意义，但我们真的有多不同吗？要求所有人都用英语编程不也是同样荒谬吗？顺便说一句，各位英语世界的开发者们，有一天这种情况也可能逆转。
 
-### 24:32-Gretchen McCulloch
+## 24:32-Gretchen McCulloch
 
-I don't think it's likely in the short term for a programming language based on language other than English to become dominant, but it's entirely possible in the long term because we know that Latin didn't last forever as the lingua franca.
+短期内，基于非英语的编程语言成为主流的可能性不大，但从长期来看，这完全有可能。因为我们知道，拉丁语并未永远作为通用语言存在。
 
-### 24:52-Saron Yitbarek
+## 24:52-Saron Yitbarek
 
-### 1995 was the year that HTML became standardized, but that moment in tech history sparked a decade-long discussion that's continuing to this day. We're still finding ways to make the web language a platform for everybody. And this matters because we have no way of knowing what people from different backgrounds, different languages, will build; what apps they'll design; what code they might write once they're given the chance to work with their own voice
+1995 年是 HTML 标准化的年份，但那个技术史上的重要时刻引发了一场延续至今的长期讨论。我们仍在寻找方法让网络语言成为一个面向所有人的平台。这很重要，因为我们无法预测，来自不同背景和语言的人会创造出什么；他们会设计出什么样的应用；或者一旦他们有机会用自己的语言进行工作，会写出怎样的代码。
 
-### 25:23-Saron Yitbarek
+## 25:23-Saron Yitbarek
 
-We just might be amazed by our own diversity and maybe that is the standard we should all be reaching for. Next time, we're diving into another of 1995’s biggest transformations, the fantastic emergence of web designers. Until then find bonus material about HTML and all our 1995 stories over at redhat.com/commandlineheroes. I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red Hat. Keep on coding.
+我们或许会对自身的多样性感到惊叹。也许这才是我们所有人应该努力达到的标准。下一期节目，我们将深入探讨 1995 年另一个最大的变革——网页设计师的精彩崛起。在此之前，欢迎访问 redhat.com/commandlineheroes 查看有关 HTML 和我们所有 1995 年故事的更多内容。我是 Saron Yitbarek，这里是 Command Line Heroes，一档来自 Red Hat 的原创播客节目。继续编程吧！
