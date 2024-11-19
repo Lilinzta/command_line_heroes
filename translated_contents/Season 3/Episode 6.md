@@ -4,394 +4,394 @@ Shell 是大规模 IT 可能的基础。它们是现代计算的必要组成部�
 
 在 70 年代，Bell Labs 想要自动化一系列重复而复杂的命令。Chet Ramey 描述了 Bell 如何开发几种 shell——但 UNIX 只能有一个官方支持的 shell。于是，Bourne shell 诞生了。尽管它是当时最佳的选择，但 Bourne shell 也有其局限性，并且只能在有限的 UNIX 许可证下使用。Brian J. Fox 回忆他在 Free Software Foundation 的经历，他需要创建一个自由的——就像言论自由一样——Bourne shell 版本。这个版本必须兼容，但不能使用任何原始源代码的元素。这个 Bourne-Again Shell，也就是 Bash，可能是地球上使用最广泛的软件之一。Taz Brown 描述了它是开发者可以学习使用的最重要的工具之一。
 
-### 00:07-Saron Yitbarek
+## 00:07-Saron Yitbarek
 
 1987 年，罗纳德·里根的美国正如火如荼地发展着，一个 27 岁的高中辍学生怀揣着大梦想，正开车前往他在圣巴巴拉的新家。这个人名叫 Brian Fox，在他车子的后备厢里，装着两卷装满他编写代码的大磁带。
 
-### 00:28-Saron Yitbarek
+## 00:28-Saron Yitbarek
 
 Fox 在自由软件运动中作为程序员工作了多年。他相信，锁在后备厢里的代码是新现实、新软件范式的一部分，他的社区正一步一步将其带入生活。
 
-### 00:49-Saron Yitbarek
+## 00:49-Saron Yitbarek
 
 那一年，理查德·斯托曼的自由软件基金会的一个程序员团队试图让编程界获得自由。他们希望构建一个替代自 70 年代以来主导编程的 UNIX 操作系统。它们的 GNU，意为 GNU 不是 UNIX，将成为一个面向大众的操作系统，任何人都可以使用，而无需担心许可费用或版权问题。
 
-### 01:18-Saron Yitbarek
+## 01:18-Saron Yitbarek
 
 基金会多年来一直在拼凑这个勇敢的新操作系统。而 Brian Fox 车后备厢里的那两卷巨大磁带？它们包含了一个关键组件。磁带上写着一个免费且可修改的 shell，能够完善 GNU 操作系统，这是 Brian Fox 对自由软件运动的贡献。他称之为 Bash。
 
-### 01:46-Saron Yitbarek
+## 01:46-Saron Yitbarek
 
 我是 Saron Yitbarek，这里是 Red Hat 的原创播客《Command Line Heroes》。在这一集中，我们将关注 Bash shell 中的英雄们。我们正在揭示 shell 的历史，以及它们为何对我们今天的工作至关重要。想象一下 shell 脚本就像是你给演员的剧本。它们提供了一整套命令，shell 可以自己逐条执行，就像演员可以一一朗读台词。这是处理重复或复杂命令的终极解决方案。它是自动化的关键。可以说，shell 脚本使我们的开发工作变得更高效。但是否可以编写一个 shell，将这种超能力分享给全世界？这就是挑战所在。
 
-### 02:38-Ken Thompson
+## 02:38-Ken Thompson
 
 回到 1969 年，Bell Labs 的几位计算机科学家开始开发他们自己需要的一些程序。
 
-### 02:48-Saron Yitbarek
+## 02:48-Saron Yitbarek
 
 这位先锋的命令行英雄是 Ken Thompson。UNIX 操作系统是在 Bell Labs 设计的，最初确实是为了他们的个人使用。最初，它只是一个内部系统。UNIX 鼓励程序员之间的密切沟通，但它并不打算改变整个世界的运作方式。它的目标是改变 Bell Labs。
 
-### 03:13-Ken Thompson
+## 03:13-Ken Thompson
 
 现在，它在 Bell Labs 的各个地方都得到了使用。我们公司有近 20,000 个计算机终端，其中大多数用于与 UNIX 系统进行通信。
 
-### 03:25-Saron Yitbarek
+## 03:25-Saron Yitbarek
 
 由 Ken Thompson 设计的 UNIX shell 于 1971 年发布。Thompson shell 被设计为命令行解释器，但实际上并不能完全进行脚本编写。直到六年后，即 1977 年，脚本编写才开始兴起。
 
-### 03:44-Chet Ramey
+## 03:44-Chet Ramey
 
 我们今天所认为理所当然的 shell 参数、特殊参数和变量，都是由 Steve Bourne 和 Bourne shell 开创的。
 
-### 03:57-Saron Yitbarek
+## 03:57-Saron Yitbarek
 
 这位是 Chet Ramey，凯斯西储大学的 IT 架构师。Chet 负责维护 Bash，但他也是我们起源故事的重要资源。他描述了 Bell Labs 当时正在思考 UNIX shell 将会是什么样子的。
 
-### 04:13-Chet Ramey
+## 04:13-Chet Ramey
 
 我们今天不假思索地使用的编程构造，起源于 Steve Bourne，他的 shell 基本上赢得了这场“烘焙比赛”。当时使用 Mashey shell 的用户社区相当庞大，开始使用 Bourne shell 的用户社区也在迅速增长。成立了一个委员会来决定哪一个会胜出，哪一个会成为从此以后 Bell Labs 官方支持的 UNIX shell，最终 Bourne 的 shell 赢了。其余的，正如他们所说的，都是历史。
 
-### 04:54-Saron Yitbarek
+## 04:54-Saron Yitbarek
 
 不过，这并不是历史的终结。确实，Bourne shell 是一个巨大的进步。它为超强操作和更大的自动化打开了一扇门，然而，尽管在一段时间内存在 Bourne 的主导地位，但 Bourne shell 并没有解决我们所有的脚本需求。
 
-### 05:14-Chet Ramey
+## 05:14-Chet Ramey
 
 Bourne 编写 shell 时所面临的限制几乎是今天无法想象的。显然，在那些限制下，必须放弃很多，而 Bourne 确实放弃了很多。考虑到他所面临的空间、内存和 CPU 限制，他能在 Bourne shell 中实现这么多，实属不易。
 
-### 05:42-Saron Yitbarek
+## 05:42-Saron Yitbarek
 
 请记住，Bourne shell 仍然是 Bell Labs UNIX 系统的一部分，仍然与 UNIX 许可证相关联。这意味着它不是免费的，也不是开放的。这个 shell 是被拥有的。
 
-### 05:55-Chet Ramey
+## 05:55-Chet Ramey
 
 如果你不在大学里，获取 UNIX 源代码是极其困难的。显然，这对 Berkeley UNIX 的流行产生了影响，例如，Berkeley UNIX 是从一所大学开始的，在大学社区中发展起来，基本上走上了最小阻力的道路。因此，如果你在合适的地方，获取 Bourne shell 代码并不困难，但总体来说，它并不可行。
 
-### 06:36-Saron Yitbarek
+## 06:36-Saron Yitbarek
 
 Chet Ramey 是 Bash shell 的维护者。
 
-### 06:41-Saron Yitbarek
+## 06:41-Saron Yitbarek
 
 所以，我们看到了 shell 的开端，这一编程的重要组成部分的开始，但现有的最佳 shell 与许可证相关联，属于封闭式。对于理查德·斯托曼和他的自由软件基金会而言，这种安排显然是不可接受的。需要的是一个不与任何公司绑定的 shell，一个属于人民的 shell。
 
-### 07:05-Saron Yitbarek
+## 07:05-Saron Yitbarek
 
 但这里有个难题。这意味着要编写一个能够完成 Bourne shell 所有功能的程序，同时又不侵犯那些烦人的版权。如果逐字复制 Bourne shell 的代码，你就会面临诉讼。
 
-### 07:20-Saron Yitbarek
+## 07:20-Saron Yitbarek
 
 要让人们摆脱 Bourne shell，你需要找到一个能够编写如此复杂程序的开发者，这个程序必须能做到 Bourne shell 能做的一切，但他实际上又没有见过 Bourne 的源代码。你需要找到一种外部天才。而理查德·斯托曼恰好找到了适合这个任务的程序员。
 
-### 07:46-Saron Yitbarek
+## 07:46-Saron Yitbarek
 
 Brian Fox 是一位 20 多岁的高中辍学生，代码能力超过了 Bell Labs 的大多数人。他从未有机会看到任何使 Bourne shell 工作的源代码，这使得他非常适合这个任务。
 
-### 08:02-Brian Fox
+## 08:02-Brian Fox
 
 我的名字是 Brian Fox。
 
-### 08:04-Saron Yitbarek
+## 08:04-Saron Yitbarek
 
 我想直接听听当事人的故事。如今，Fox 是开源倡导者和 Opus Logica 的 CEO。但在 80 年代末，他只是一位相信自由软件运动的年轻人。我们聊了聊往昔，以及 Bash 是如何从那里演变而来的。
 
-### 08:23-Saron Yitbarek
+## 08:23-Saron Yitbarek
 
 那么，理查德·斯托曼让你为 UNIX 创建一个 shell。这将是一个免费的 shell，并替代 Bourne shell。你对这个请求的反应是什么？
 
-### 08:38-Brian Fox
+## 08:38-Brian Fox
 
 “我们能不能做一个更好的？”
 
-### 08:41-Saron Yitbarek
+## 08:41-Saron Yitbarek
 
 我喜欢这个。告诉我更多。
 
-### 08:45-Brian Fox
+## 08:45-Brian Fox
 
 我为斯托曼做的第一件事实际上是开发这个技术信息文档系统。我让理查德对我在这种编程类型上的速度感到惊讶。他是一位优秀的程序员，工作也很快，但他没有意识到其他人能这么快。
 
-### 09:00-Brian Fox
+## 09:00-Brian Fox
 
 所以，在第一周内，我完成了一个名为 GNU Info 的程序的第一次实现，理查德对此有些震惊。我说：“我下一个项目是什么？我的下一个项目是什么？”他回答：“好吧，现在为这个做一个编译器。”我完成了这个任务，也花了一周的时间。然后我又问：“我的下一个项目是什么？我的下一个项目是什么？”他说：“另一个家伙在做这个 shell，但他进展不大。”我说：“好的。”九个月后，Bourne 替代 shell 就完成了。
 
-### 09:29-Saron Yitbarek
+## 09:29-Saron Yitbarek
 
 九个月。哇，告诉我关于这段时间的事。为什么这么具有挑战性？
 
-### 09:33-Brian Fox
+## 09:33-Brian Fox
 
 这是一个非常有趣的问题。之所以如此具有挑战性，是因为我们必须忠实地模拟 Bourne shell 的所有行为，即 Stephen Bourne 的原始 shell，同时又要允许扩展它，创造出一个更好的工具供人们使用。
 
-### 09:51-Brian Fox
+## 09:51-Brian Fox
 
 在此期间，我与 Korn shell 的作者 David Korn 进行了一场隐秘的争论。POSIX 委员会，即规定标准 UNIX 的委员会，参与其中并表示：“哦，好吧，我们需要找出标准 shell。”对此提供输入的两位重要人物是我和 David Korn。David Korn 已经编写了名为 KSH 的 shell，而他在 KSH 中添加的每个功能，他都说：“那应该是一个标准功能。”如果他的 shell 是最完美的 POSIX shell，这对他来说将会很容易。
 
-### 10:31-Brian Fox
+## 10:31-Brian Fox
 
 但其中一些功能并不好，并不是好的选择，使得该 shell 与 Bourne shell 的兼容性稍显不足，或者我觉得遗漏了某些功能，因此就产生了多次讨论和争论。因此，构建一个与 Bourne shell 之前编写的每一个 shell 脚本 100% 完全兼容的 POSIX 合规 shell 花费了超过三个月的时间。
 
-### 10:54-Saron Yitbarek
+## 10:54-Saron Yitbarek
 
 所以，如果你设计的东西不仅替代了 Bourne shell，还试图模仿 Bourne shell 的每个部分，听起来你可能会遇到一些版权问题。你是如何处理这个问题的？
 
-### 11:08-Brian Fox
+## 11:08-Brian Fox
 
 为了构建真正的开源和自由软件，你必须在一个“干净的房间”里进行。你不能查看其他人的代码，从那里开始并重新实现它。因此，我从未见过与任何 Bell 系统、UNIX 或甚至伯克利 UNIX 相关的任何软件，我从未见过这些东西的源代码。
 
-### 11:29-Brian Fox
+## 11:29-Brian Fox
 
 当我开始构建 Bash shell 时，我使用了一个叫 Bison 的解析器，这是理查德在自由软件基金会开始开发的东西，和之前的任何程序都完全不同。因此，我已经知道我正在构建的东西不会侵犯之前构建的版权。
 
-### 11:55-Saron Yitbarek
+## 11:55-Saron Yitbarek
 
 创建 Bash 的过程中出现了许多波折。这里有一个例子，给那些硬核英雄们。
 
-### 12:03-Brian Fox
+## 12:03-Brian Fox
 
 在某个时候，我正在实现 shell 中的 globbing。这是一个通配符扩展功能，允许你匹配大量文件，例如。你可以说 star dot C，这样就会匹配每个以 dot C 结尾的文件。
 
-### 12:17-Brian Fox
+## 12:17-Brian Fox
 
 所以我花了几个小时来实现 globbing，并且它工作得很好，我对此感到兴奋。这是一个很好的实现。在创建这个实现的过程中，我在我的目录中创建了一个名为 asterisk dot C 的文件，也就是 star dot C。我想：“我应该把这个文件删掉。”于是我输入了 RM 空格，引用，star dot C，关闭引用，在现代 shell 中，当你使用引号时，它意味着“不要扩展这个”，然后我按下了回车，但提示返回的时间很长，因为我们在使用 Sun 350 这样的慢电脑。我意识到，这么长时间是因为它正在删除这个目录中的所有源文件。
 
-### 12:58-Saron Yitbarek
+## 12:58-Saron Yitbarek
 
 哦，不。
 
-### 12:59-Brian Fox
+## 12:59-Brian Fox
 
 是的。所以在那时，我删除了 Bash 的源代码。
 
-### 13:01-Saron Yitbarek
+## 13:01-Saron Yitbarek
 
 哦，不。
 
-### 13:04-Brian Fox
+## 13:04-Brian Fox
 
 是的——
 
-### 13:05-Saron Yitbarek
+## 13:05-Saron Yitbarek
 
 天啊，真是难以置信。
 
-### 13:06-Brian Fox
+## 13:06-Brian Fox
 
 这让我大笑了很长时间。我一点都不生气。接下来的几天里，我又把代码全都重新敲了一遍，因为那些代码在我脑子里非常清晰。
 
-### 13:20-Saron Yitbarek
+## 13:20-Saron Yitbarek
 
 哇。
 
-### 13:20-Brian Fox
+## 13:20-Brian Fox
 
 问题已经解决了，只不过是重新把它们写进文件里。
 
-### 13:25-Saron Yitbarek
+## 13:25-Saron Yitbarek
 
 好吧，大多数人在那个时候会彻底崩溃。而你笑了，然后说：“哦，我猜我得重新来过。”你为什么如此冷静？
 
-### 13:35-Brian Fox
+## 13:35-Brian Fox
 
 这件事让我觉得荒谬得可笑，我在构建这个工具，为了确保它好用，你必须自己“吃自己的狗粮”，在构建工具的同时使用它来确保它能正常工作。但这个工具当时并没有正常工作。因为我还没有实现引号处理功能，所以我随手输入的命令没有按预期执行，我觉得这特别好笑。
 
-### 14:06-Saron Yitbarek
+## 14:06-Saron Yitbarek
 
 太棒了。
 
-### 14:08-Saron Yitbarek
+## 14:08-Saron Yitbarek
 
 即使是这个犯错的故事，也展现了 Fox 的天才。他们说莫扎特在脑海中完成交响乐后，只需把它写下来。Fox 也有类似的天赋。
 
-### 14:23-Saron Yitbarek
+## 14:23-Saron Yitbarek
 
 那么，当你最终完成并发布 Bash 时，那感觉如何？
 
-### 14:27-Brian Fox
+## 14:27-Brian Fox
 
 哦，实际上感觉非常棒。这里有个我通常不讲的故事。大约在我构建 shell 的第 8 个月时，我知道还需要大约一个月才能完成，结果另一个 shell 发布了。ASH，一个开源的 shell 发布了，我感到非常沮丧，因为我们还没有向任何人发布 Bash，只有少数几个人在使用它。我知道还需要一个月的工作，我心想：“哦，这太糟糕了，我所有的努力可能不会被认可，甚至可能不会被看到。”当时我真的很沮丧，没在笑。
 
-### 15:13-Saron Yitbarek
+## 15:13-Saron Yitbarek
 
 不过，结果证明一切都是值得的。GNU 的 Bash 于 1989 年发布，并成为 Linux 的默认 shell。如今，它已经渗透到我们整个计算体验中。
 
-### 15:25-Saron Yitbarek
+## 15:25-Saron Yitbarek
 
 它无处不在。每天都有无数人使用它。它几乎存在于每台计算机上。作为 Bash 的作者，这种感觉如何？
 
-### 15:34-Brian Fox
+## 15:34-Brian Fox
 
 大多数时候，我甚至不会注意到 Bash 是个什么东西，只是我日常生活中的一个工具罢了。我不太会去思考它。有时候，我会走进 Apple 店环顾四周，心想：“哇，这里的每台电脑不仅运行着我 27 年前写的软件，甚至还有我的名字。”然后我会想：“互联网上的每台电脑，每个服务器都在运行 Bash shell，并且有我的名字。”去年或前年，Windows 也推出了 Power shell，其实就是 Bash，我当时想：“天啊，我的名字在每台电脑上都出现了。”
 
-### 16:21-Saron Yitbarek
+## 16:21-Saron Yitbarek
 
 接下来 Fox 对我说的话非常重要，我希望你能认真听。他从未想过通过编程来统治全球，他只是想帮助他所在的编程文化。
 
-### 16:37-Brian Fox
+## 16:37-Brian Fox
 
 我并不是为了达到某种宏大的目标，想让我的软件出现在每个人的电脑上。我对此毫无兴趣。我只是想做一个有用的软件，并预计它的生命周期大概是 3 到 5 年，而不是现在这样疯狂的 30 年。
 
-### 16:58-Saron Yitbarek
+## 16:58-Saron Yitbarek
 
 你一直对你在计算领域的影响都如此淡然吗？
 
-### 17:06-Brian Fox
+## 17:06-Brian Fox
 
 我为我写了 Bash 感到自豪，我也有自尊心，所以会做一些像接受播客邀请来谈论 shell 的事情。
 
-### 17:14-Saron Yitbarek
+## 17:14-Saron Yitbarek
 
 非常感谢你。
 
-### 17:15-Brian Fox
+## 17:15-Brian Fox
 
 谢谢你。不过，这并不是我日常生活的一部分。幸运的是，我仍然是个默默无闻的人，对吧？虽然我的软件在每个人家里的电脑上运行，这是真的，但也没有人知道这是我做的，对吧？所以我还保有很多匿名性。而且现在这个 shell 的存在，以及这个写 shell 的人住在圣巴巴拉，也渐渐为人所知，我在生活中开始注意到这一点了。有时人们来看我演奏音乐，然后会对我说：“你就是那个写 shell 的人。”这让我有点像基努·里维斯一样的感觉。
 
-### 17:54-Saron Yitbarek
+## 17:54-Saron Yitbarek
 
 非常酷。你说你并没有打算让 Bash 出现在每一台电脑上。那么你最初的目标是什么？你对 Bash 有什么期待？
 
-### 18:04-Brian Fox
+## 18:04-Brian Fox
 
 我希望 Bash 能成为 GNU 项目的一部分，成为一个有用的替代工具，帮助创建这个自由开源操作系统。其实，我原本以为，当我们完成这个开源操作系统后，系统上的软件会不断进步，我也会有机会去创建我真正想要的 shell，从而帮助大家以某种方式推动科技进步。
 
-### 18:35-Brian Fox
+## 18:35-Brian Fox
 
 最终我意识到，Bash 被创建的真正原因是为了与当时已经存在的整个 UNIX 世界保持向后兼容，而这种惯性使它一直存在下去。它也因此处于一个非常独特的地位——你的工具如此基础，就像螺母和螺栓一样，无法被移除。
 
-### 19:01-Saron Yitbarek
+## 19:01-Saron Yitbarek
 
 完全没错。
 
-### 19:01-Brian Fox
+## 19:01-Brian Fox
 
 知道自己创造了一个有价值的东西，其他人仍在使用，这种感觉非常好。而当我回顾这件事的来龙去脉时，我意识到更重要的是，“自由软件”和“开源”这些词汇已经成为全球日常语言的一部分，而在最初的时候显然并不是这样。这是 Richard Stallman、我和其他人共同努力的结果。能够成为这个运动的一部分，我觉得非常幸运，同时当我回顾这一切时，也感到非常满足。我会想：“哇，开源软件存在了，而我曾参与其中。”
 
-### 19:50-Saron Yitbarek
+## 19:50-Saron Yitbarek
 
 Brian Fox 是 Bash shell 的创建者，也是 Opus Logica 的 CEO。
 
-### 20:01-Steve Bourne
+## 20:01-Steve Bourne
 
 其实我听说过 Bash。
 
-### 20:03-Saron Yitbarek
+## 20:03-Saron Yitbarek
 
 这是 Steve Bourne，Bourne shell 的创建者，Brian Fox 的 Bash 是为了取代他的工作。我们想知道 Bourne 对 Fox 的工作的看法。他是否认为 Bash 作为“Bourne Again” shell，是他自己作品的开源克隆？他对 Bash 的态度怎么样呢？
 
-### 20:20-Steve Bourne
+## 20:20-Steve Bourne
 
 有一天，有人在一个会议上走过来把一件印有“Bourne Again”字样的 T 恤送给了我。
 
-### 20:26-Saron Yitbarek
+## 20:26-Saron Yitbarek
 
 那就是 Brian Fox。
 
-### 20:29-Steve Bourne
+## 20:29-Steve Bourne
 
 这是一个友好的表示，他说：“我希望你不介意，但我刚刚重写了你的 shell。”我回答：“听起来很棒。”然后他送给我一件 T 恤。
 
-### 20:38-Saron Yitbarek
+## 20:38-Saron Yitbarek
 
 如果我在编程界学到一件事，那就是大家都喜欢赠品。事实证明，Steve Bourne 把 Bash 看作是他和其他人在贝尔实验室的工作的一种必要延伸，完全没有任何怨恨。
 
-### 20:52-Steve Bourne
+## 20:52-Steve Bourne
 
 在变量替换和字符串管理方面，人们想做一些我没有做的事情，但这些功能被加入了 Bash，如今人们经常使用这些功能。当时，我的印象是 Bash 只是对原有语言的重新实现，但随着时间的推移，它确实加入了新功能，尤其是在字符串管理方面，它确实超越了我原来的设计。我现在也经常使用它。
 
-### 21:21-Saron Yitbarek
+## 21:21-Saron Yitbarek
 
 Steve Bourne 是 Bourne shell 的创建者，现在是 Rally Ventures 的首席技术官。
 
-### 21:32-Saron Yitbarek
+## 21:32-Saron Yitbarek
 
 自从 Bash 被放进 Brian Fox 的卡车，驶向圣巴巴拉的那段旅程以来，已经过去很多年了。2019 年，Bash 5.0 版本发布，正如 Fox 提到的那样，Bash 现在已经内置在 Linux、Mac OS，甚至是 Microsoft Windows 中。随着 UNIX 向 Linux 过渡，Bash 成为开源世界脚本编写的基石。它是自动化的基础。
 
-### 22:02-Taz Brown
+## 22:02-Taz Brown
 
 随着组织规模的扩大，使用某种能够加快任务完成速度的工具变得几乎至关重要，Bash 成为了一个必需品。
 
-### 22:16-Saron Yitbarek
+## 22:16-Saron Yitbarek
 
 Taz Brown 是 Red Hat 的高级 Ansible 自动化顾问，因此她非常了解 Bash 的价值。
 
-### 22:24-Taz Brown
+## 22:24-Taz Brown
 
 我绝对认为，在职业生涯初期的人应该学习 Bash。与其使用图形用户界面（GUI），作为管理员或 DevOps 人员，你会更容易被认真对待。
 
-### 22:39-Saron Yitbarek
+## 22:39-Saron Yitbarek
 
 这是因为会写 Bash 脚本的人会掌握一种核心技能，这种技能能够让你提升水平。
 
-### 22:45-Taz Brown
+## 22:45-Taz Brown
 
 学习脚本编写是有价值的，因为它让你在自动化方面成为更具长远思考能力的人。你可以看到脚本是如何运行的，然后你会开始想：“好吧，我可以做这个，我可以自动化这个任务，我可以自动化那个任务。”这会让你成为一个不同的思考者和技术人员。
 
-### 23:09-Saron Yitbarek
+## 23:09-Saron Yitbarek
 
 在运维方面，自动化已经变得不可或缺。复杂的程序、应用和工具都依赖于传统的 Bash 代码支持。
 
-### 23:21-Taz Brown
+## 23:21-Taz Brown
 
 你不需要重新发明轮子。你可以继续使用从 GitHub 仓库或其他地方获取的特定文件。Bash 允许你这样做，它允许你把这些常见任务扩展到，比如，从 10 台服务器扩展到 1000 台服务器。
 
-### 23:42-Taz Brown
+## 23:42-Taz Brown
 
 自动化的好处在于，一旦你有了计划，它可以以非常高效的方式执行。它让你做一些手动操作不可能完成的事情。
 
-### 23:56-Saron Yitbarek
+## 23:56-Saron Yitbarek
 
 而且像 Taz Brown 参与的 Ansible® 这样的新工具，可以与 Bash 集成来完成任务。
 
-### 24:04-Taz Brown
+## 24:04-Taz Brown
 
 技术在不断发展，但我不认为 Bash 会退出管理员的工具箱，尤其是当你想要快速实现自动化时。
 
-### 24:14-Saron Yitbarek
+## 24:14-Saron Yitbarek
 
 最终，所有这些成功都可以追溯到一个事实，那就是 Bash 是一个免费且可供修改的程序。Brian Fox 想要给世界带来不受许可证和限制的软件，这正是 Bash 成功的关键。事实上，他现在已经不再负责 Bash 的发展了，早就离开了。Chet Ramey 负责维护 Bash 已经几十年了。
 
-### 24:38-Chet Ramey
+## 24:38-Chet Ramey
 
 我记得 Brian 在发布 1.05 版本后决定想要转向其他工作。他在自由软件基金会接到了其他任务，想要做一些除了 Bash 以外的事情。而当时，我是最活跃的贡献者。他和我一起合作开发了许多新功能，也解决了很多 Bug，所以当需要有人接手时，我是最合适的人选。
 
-### 25:16-Saron Yitbarek
+## 25:16-Saron Yitbarek
 
 Ramey 也会像 Fox 一样，最终交出接力棒，因为 Bash 已经超越了任何一位维护者的个人能力。
 
-### 25:25-Chet Ramey
+## 25:25-Chet Ramey
 
 我从 23 岁开始接触 Bash，我们一起成长。到某个时候，我需要招募一个团队，需要找到愿意并有能力投入时间来推动 Bash 向前发展的人员。
 
-### 25:46-Saron Yitbarek
+## 25:46-Saron Yitbarek
 
 Bash 这个“重生的 shell”明年就要 30 岁了，丝毫没有衰退的迹象。Bash 乘上了自由软件的浪潮，然后是开源软件的浪潮，直到扩展到编程世界的每个角落。但令人惊讶的是，曾经它只是一卷磁带上的代码，躺在 Brian Fox 车的后备箱里。它只是一种 shell 语言的梦想，几个充满奉献精神的开发者愿意把它免费分享出去。几乎是在无意中，Brian Fox 成为了一位伟大的命令行英雄。
 
-### 26:23-Saron Yitbarek
+## 26:23-Saron Yitbarek
 
 顺便说一句，有件事一直困扰着我，Brian Fox 驾车带着所有 Bash 代码去圣巴巴拉。为什么要搬家？是去那里的一家科技公司工作吗？
 
-### 26:34-Brian Fox
+## 26:34-Brian Fox
 
 我想继续我的音乐事业，而我觉得最适合的地方是气温永远保持在 72 华氏度左右，天上没有云，海滩美丽的地方。
 
-### 26:45-Saron Yitbarek
+## 26:45-Saron Yitbarek
 
 不错，我更喜欢这个理由。
 
-### 26:49-Saron Yitbarek
+## 26:49-Saron Yitbarek
 
 感谢 Wayne A. Lee，他为本集节目提供了标题“Heroes in a Bash Shell”。起得好，Wayne。
 
-### 26:57-Saron Yitbarek
+## 26:57-Saron Yitbarek
 
 下一集节目中，我们将对自动化的兴趣提升到一个全新的高度，深入探讨 AI 语言，特别是 John McCarthy 创造的 LISP。
 
-### 27:11-Saron Yitbarek
+## 27:11-Saron Yitbarek
 
 《Command Line Heroes》是 Red Hat 原创播客。如果你想深入了解 Bash 的故事，或者我们本季讨论的任何编程语言，可以访问该节目的网站 redhat.com/commandlineheroes。
 
-### 27:28-Saron Yitbarek
+## 27:28-Saron Yitbarek
 
 我是 Saron Yitbarek。下次见，继续编程吧。
